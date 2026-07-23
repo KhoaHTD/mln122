@@ -231,8 +231,13 @@
             explanation: q.explanation || ""
         }));
 
-        let currentIndex = 0;
-        let userAnswers = {}; // Lưu dưới dạng chuỗi các đáp án (VD: "A", "ABC")
+        let currentIndex = parseInt(localStorage.getItem('quiz_currentIndex')) || 0;
+        let userAnswers = JSON.parse(localStorage.getItem('quiz_userAnswers')) || {};
+
+        function saveState() {
+            localStorage.setItem('quiz_currentIndex', currentIndex);
+            localStorage.setItem('quiz_userAnswers', JSON.stringify(userAnswers));
+        } // Lưu dưới dạng chuỗi các đáp án (VD: "A", "ABC")
 
         const qNumberDisplay = document.getElementById('qNumberDisplay');
         const totalQuestionsDisplay = document.getElementById('totalQuestionsDisplay');
@@ -253,6 +258,7 @@
             totalQuestionsDisplay.textContent = questionsData.length;
             loadQuestion(currentIndex);
             updateNavButtons();
+            saveState();
             
             jumpInput.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') {
@@ -261,6 +267,7 @@
                         currentIndex = val - 1;
                         loadQuestion(currentIndex);
                         updateNavButtons();
+                        saveState();
                         this.blur();
                     } else {
                         alert("Invalid question number!");
@@ -350,6 +357,7 @@
             selected.sort();
             const selectedStr = selected.join('');
             userAnswers[currentIndex] = selectedStr;
+            saveState();
             
             const currentQ = questionsData[currentIndex];
             const numAnswersRequired = currentQ.correctAnswer.length;
@@ -364,6 +372,7 @@
         function showAnswerImmediately() {
             const currentQ = questionsData[currentIndex];
             userAnswers[currentIndex] = currentQ.correctAnswer.split('').sort().join('');
+            saveState();
             
             const inputs = document.getElementsByName('userAnswer');
             for (let input of inputs) {
@@ -383,7 +392,7 @@
             if (isCorrect) {
                 resultBox.className = 'result-container result-correct';
                 resultStatus.textContent = "✓ Correct!";
-                correctAnswerDisplay.innerHTML = "";
+                correctAnswerDisplay.innerHTML = `Correct answer is: <strong>${questionObj.correctAnswer}</strong>`;
             } else {
                 resultBox.className = 'result-container result-incorrect';
                 resultStatus.textContent = "✗ Incorrect";
@@ -398,6 +407,7 @@
                 currentIndex--;
                 loadQuestion(currentIndex);
                 updateNavButtons();
+                saveState();
             }
         }
 
@@ -406,6 +416,7 @@
                 currentIndex++;
                 loadQuestion(currentIndex);
                 updateNavButtons();
+                saveState();
             }
         }
 
