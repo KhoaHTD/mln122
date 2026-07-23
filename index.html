@@ -325,19 +325,6 @@
             resultBox.className = 'result-container';
             resultBox.style.display = 'none';
 
-            if (userAnswers[index]) {
-                const savedAnswer = userAnswers[index];
-                const inputs = document.getElementsByName('userAnswer');
-                for (let input of inputs) {
-                    if (savedAnswer.includes(input.value)) {
-                        input.checked = true;
-                    }
-                }
-                
-                if (savedAnswer.length >= numAnswersRequired) {
-                    showResult(savedAnswer, q);
-                }
-            }
         }
 
         function updateNavButtons() {
