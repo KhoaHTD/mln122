@@ -1,3 +1,175 @@
+What is the goal of software validation?
+A. Building the system
+B. Building the right system
+C. Building the system right
+D. Testing the system
+B
+
+
+What is the goal of software verification?
+A. Building the system
+B. Building the right system
+C. Building the system right
+D. Testing the system
+C
+
+
+What is a composition hierarchy?
+A. A weak form of a generalization/specialization hierarchy
+B. A strong form of a generalization/specialization hierarchy
+C. A weak form of a whole/part relationship
+D. A strong form of a whole/part relationship
+D
+
+
+What is an aggregation hierarchy?
+A. A weak form of a generalization/specialization hierarchy
+B. A strong form of a generalization/specialization hierarchy
+C. A weak form of a whole/part relationship
+D. A strong form of a whole/part relationship
+C
+
+
+What does a communication diagram depict?
+A. The sequence of external objects communicating with each other
+B. Classes and their relationships
+C. Software objects and the sequence of their interactions
+D. The external objects communicating with the system
+C
+
+
+What does a sequence diagram depict?
+A. The sequence of external objects communicating with each other
+B. Classes and their relationships
+C. Software objects and the sequence of their interactions
+D. The external objects communicating with the system
+C
+
+
+An input message to a state-dependent control object corresponds to:
+A. An event on the internal state machine
+B. An action on the internal state machine
+C. A condition on the internal state machine
+D. A state on the internal state machine
+A
+
+
+An output message from a state dependent control object corresponds to:
+A. An event on the internal state machine
+B. An action on the internal state machine
+C. A condition on the internal state machine
+D. A state on the internal state machine
+B
+
+
+How is a use case depicted on a use case diagram?
+A. An oval
+B. A stick figure
+C. A box
+D. A dashed line
+A
+
+
+How is an actor depicted on a use case diagram?
+A. An oval
+B. A stick figure
+C. A box
+D. A dashed line
+B
+
+
+An activity diagram can therefore be used to provide a more precise description of the use case, because it shows exactly where in the sequence and what the condition is for an alternative sequence to diverge from the main sequence.
+A. True
+B. False
+A
+
+
+Software Quality Attributes, Scalability is the extent to which the system is capable of growing after its initial deployment.
+A. True
+B. False
+A
+
+
+What is an entry action in a state machine?
+A. An action that is performed when the state is entered
+B. An action that is performed when the state is left
+C. An action that starts executing when the state is entered and completes executing when the state is left
+D. An action that executes as a result of a state transition
+A
+
+
+What is an exit action in a state machine?
+A. An action that is performed when the state is entered
+B. An action that is performed when the state is left
+C. An action that starts executing when the state is entered and completes executing when the state is left
+D. An action that executes as a result of a state transition
+B
+
+
+What is a dynamic view of a software architecture?
+A. A view in terms of a module hierarchy
+B. A view in terms of components and connectors
+C. A view of the physical configuration in terms of nodes and interconnections
+D. A view in terms of objects and messages
+D
+
+
+What is a structural view of a software architecture?
+A. A view in terms of a module hierarchy
+B. A view in terms of components and connectors
+C. A view of the physical configuration in terms of nodes and interconnections
+D. A view in terms of objects and messages
+B
+
+
+What does a statechart diagram depict?
+A. Objects and links
+B. Classes and relationships
+C. Objects and messages
+D. States and events
+D
+
+
+What does an interaction diagram depict?
+A. Objects and links
+B. Classes and relationships
+C. Objects and messages
+D. States and events
+C
+
+
+What approach does the spiral model emphasize?
+A. Phased software development
+B. Throwaway prototyping
+C. Risk-driven development
+D. Incremental development
+C
+
+
+What is evolutionary prototyping?
+A. Phased software development
+B. Throwaway prototyping
+C. Risk-driven development
+D. Incremental development
+D
+
+
+How is a concurrent service designed?
+A. One object that responds to requests from clients
+B. Multiple objects that respond to requests from clients
+C. One subsystem that responds to requests from clients
+D. Multiple subsystems that respond to requests from clients
+B
+
+
+How is a sequential service designed?
+A. One object that responds to requests from clients
+B. Multiple objects that respond to requests from clients
+C. One subsystem that responds to requests from clients
+D. Multiple subsystems that respond to requests from clients
+A
+
+
 What is inheritance?
 A. A mechanism for inheriting characteristics from a parent
 B. A mechanism for sharing and reusing code between classes
@@ -45,6 +217,7 @@ C. To model the organization and behavior of objects within a single classifier.
 D. To depict the flow of control and the partitioning of a system into states and transitions.
 C
 
+
 In a use case diagram, what does an actor represent?
 A. A specific instance of a class in the system
 B. A software component responsible for data storage
@@ -59,14 +232,6 @@ B. Easier maintenance of code
 C. Increased hardware performance
 D. Early detection of design flaws
 C
-
-
-What is the goal of software validation?
-A. Building the system
-B. Building the right system
-C. Building the system right
-D. Testing the system
-B
 
 
 In the context of software life cycle processes, what does "maintenance" typically involve?
@@ -149,14 +314,6 @@ D. Establishing network protocols
 A
 
 
-What is a composition hierarchy?
-A. A weak form of a generalization/specialization hierarchy
-B. A strong form of a generalization/specialization hierarchy
-C. A weak form of a whole/part relationship
-D. A strong form of a whole/part relationship
-D
-
-
 What is an attribute?
 A. A relationship between two classes
 B. A parameter of an operation or method
@@ -205,14 +362,6 @@ D. To design database schemas
 C
 
 
-What does a sequence diagram depict?
-A. The sequence of external objects communicating with each other
-B. Classes and their relationships
-C. Software objects and the sequence of their interactions
-D. The external objects communicating with the system
-C
-
-
 What is the generic form of an interaction diagram?
 A. Depicts several objects interacting with each other
 B. Depicts one possible sequence of interactions among objects
@@ -242,14 +391,6 @@ A. A transition out of only one of the substates
 B. A transition out of each of the substates
 C. A transition out of none of the substates
 D. A transition out of any one of the substates
-B
-
-
-An output message from a state dependent control object corresponds to:
-A. An event on the internal state machine
-B. An action on the internal state machine
-C. A condition on the internal state machine
-D. A state on the internal state machine
 B
 
 
@@ -517,14 +658,6 @@ D. The sequence of operations
 B
 
 
-How is an actor depicted on a use case diagram?
-A. An oval
-B. A stick figure
-C. A box
-D. A dashed line
-B
-
-
 What are software structuring criteria?
 A. Fundamental ideas that can be applied to designing a system.
 B. Systematic approaches for producing a design.
@@ -597,12 +730,6 @@ D. Developing software architectures
 D
 
 
-An activity diagram can therefore be used to provide a more precise description of the use case, because it shows exactly where in the sequence and what the condition is for an alternative sequence to diverge from the main sequence.
-A. True
-B. False
-A
-
-
 What can an activity diagram be used for in use case modeling?
 A. To depict the sequence of activities executed by all the use cases in the system
 B. To depict the sequence of external activities that the use case interacts with
@@ -625,14 +752,6 @@ B. An inheritance relationship
 C. An association between a generalized class and a specialized class
 D. A layered hierarchy
 B
-
-
-What is an aggregation hierarchy?
-A. A weak form of a generalization/specialization hierarchy
-B. A strong form of a generalization/specialization hierarchy
-C. A weak form of a whole/part relationship
-D. A strong form of a whole/part relationship
-C
 
 
 What is a state-dependent control object?
@@ -659,14 +778,6 @@ D. To show the dynamic behavior and interactions between objects or components
 D
 
 
-What does a communication diagram depict?
-A. The sequence of external objects communicating with each other
-B. Classes and their relationships
-C. Software objects and the sequence of their interactions
-D. The external objects communicating with the system
-C
-
-
 Which of the following is NOT a type of object interaction diagram?
 A. Sequence Diagram
 B. Collaboration Diagram
@@ -681,14 +792,6 @@ B. A machine with finite states
 C. A model of computation
 D. A model of system behavior
 B
-
-
-What is an entry action in a state machine?
-A. An action that is performed when the state is entered
-B. An action that is performed when the state is left
-C. An action that starts executing when the state is entered and completes executing when the state is left
-D. An action that executes as a result of a state transition
-A
 
 
 How does a composite state relate to a substate?
@@ -715,14 +818,6 @@ D. A state-dependent user interaction object
 C
 
 
-An input message to a state-dependent control object corresponds to:
-A. An event on the internal state machine
-B. An action on the internal state machine
-C. A condition on the internal state machine
-D. A state on the internal state machine
-A
-
-
 What role do software architectural patterns play in the development of an application?
 A. They specify detailed algorithms for specific tasks
 B. They dictate the user interface design
@@ -737,14 +832,6 @@ B. Assigning unique names to each state in the statechart.
 C. Numbering messages and events in the same sequence across both diagrams.
 D. Defining separate control objects for each diagram.
 C
-
-
-What is a structural view of a software architecture?
-A. A view in terms of a module hierarchy
-B. A view in terms of components and connectors
-C. A view of the physical configuration in terms of nodes and interconnections
-D. A view in terms of objects and messages
-B
 
 
 Objects that are in geographically different locations should be:
@@ -923,12 +1010,6 @@ D. The extent which the software is understood
 B
 
 
-Software Quality Attributes, Scalability is the extent to which the system is capable of growing after its initial deployment.
-A. True
-B. False
-A
-
-
 Which of the following is not addressed by a secure system?
 A. System penetration
 B. Denial of service
@@ -951,14 +1032,6 @@ B. A graphical or textual description of the software.
 C. Documentation of the software.
 D. A systematic approach for producing a design.
 B
-
-
-What does a statechart diagram depict?
-A. Objects and links
-B. Classes and relationships
-C. Objects and messages
-D. States and events
-D
 
 
 What does a deployment diagram depict?
@@ -991,14 +1064,6 @@ B. Integration testing
 C. Testing with knowledge of the system internals
 D. Testing without knowledge of the software internals
 D
-
-
-What approach does the spiral model emphasize?
-A. Phased software development
-B. Throwaway prototyping
-C. Risk-driven development
-D. Incremental development
-C
 
 
 What is data abstraction?
@@ -1053,6 +1118,8 @@ What can an inclusion use case be used for?
 A. To describe an inclusive use case
 B. To describe a lengthy interaction with an actor
 C. To describe a use case that includes other use cases
+
+
 (Đán án Chuẩn là To describe functionality that iscommon to more than one use case => Nếu có thì bắt buộc chọn)
 C
 
@@ -1129,14 +1196,6 @@ D. The alternative sequences of the use case
 B
 
 
-What is a dynamic view of a software architecture?
-A. A view in terms of a module hierarchy
-B. A view in terms of components and connectors
-C. A view of the physical configuration in terms of nodes and interconnections
-D. A view in terms of objects and messages
-D
-
-
 What is a software architectural pattern?
 A. The structure of the major subsystems of a system
 B. The components and connectors in a software architecture
@@ -1177,27 +1236,11 @@ D. I/O object and state-dependent control object
 B
 
 
-How is a concurrent service designed?
-A. One object that responds to requests from clients
-B. Multiple objects that respond to requests from clients
-C. One subsystem that responds to requests from clients
-D. Multiple subsystems that respond to requests from clients
-B
-
-
 When designing an entity class as a relational table, which of the following is NOT true?
 A. The relational table has multiple primary keys.
 B. The relational table has multiple foreign keys.
 C. The relational table has a primary key.
 D. The relational table has a concatenated primary key.
-A
-
-
-How is a sequential service designed?
-A. One object that responds to requests from clients
-B. Multiple objects that respond to requests from clients
-C. One subsystem that responds to requests from clients
-D. Multiple subsystems that respond to requests from clients
 A
 
 
@@ -1343,14 +1386,6 @@ B. Sequence diagram and communication diagram
 C. Class diagram and communication diagram
 D. Statechart and communication diagram
 B
-
-
-What does an interaction diagram depict?
-A. Objects and links
-B. Classes and relationships
-C. Objects and messages
-D. States and events
-C
 
 
 What does the Waterfall model emphasize?
@@ -1585,14 +1620,6 @@ D. In a separate document
 A
 
 
-What is the goal of software verification?
-A. Building the system
-B. Building the right system
-C. Building the system right
-D. Testing the system
-C
-
-
 What happens in a Call/Return pattern?
 A. A calling operation in the calling object sends a message to an operation (a.k.a. method) in the called object.
 B. A calling operation in the calling object invokes an operation (a.k.a. method) in the called object.
@@ -1758,14 +1785,6 @@ A. Categorizing books in a library
 B. Deciding how many copies of a book are needed
 C. Finding the classrooms in a school
 D. Identifying what labs the school has
-A
-
-
-How is a use case depicted on a use case diagram?
-A. An oval
-B. A stick figure
-C. A box
-D. A dashed line
 A
 
 
@@ -1953,28 +1972,12 @@ D. The extent to which software is capable of being changed before deployment
 C
 
 
-What is an exit action in a state machine?
-A. An action that is performed when the state is entered
-B. An action that is performed when the state is left
-C. An action that starts executing when the state is entered and completes executing when the state is left
-D. An action that executes as a result of a state transition
-B
-
-
 What is a software architecture?
 A. The software inside a building.
 B. The structure of a client/server system.
 C. The overall structure of a software system.
 D. The software classes and their relationships.
 C
-
-
-What is evolutionary prototyping?
-A. Phased software development
-B. Throwaway prototyping
-C. Risk-driven development
-D. Incremental development
-D
 
 
 During application deployment
@@ -2045,6 +2048,8 @@ Which of the following is a class that realizes an interface?
 A. The class calls the interface
 B. The class implements the interface
 C. The class is independent of the interface.
+
+
 (Đán án chuẩn là The class is called by the interface => Nếu có thì chọn )
 B
 

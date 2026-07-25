@@ -1,5 +1,243 @@
 const allQuestions = [
   {
+    "question": "What is the goal of software validation?",
+    "options": {
+      "A": "Building the system",
+      "B": "Building the right system",
+      "C": "Building the system right",
+      "D": "Testing the system"
+    },
+    "answer": "B",
+    "explanation": ""
+  },
+  {
+    "question": "What is the goal of software verification?",
+    "options": {
+      "A": "Building the system",
+      "B": "Building the right system",
+      "C": "Building the system right",
+      "D": "Testing the system"
+    },
+    "answer": "C",
+    "explanation": ""
+  },
+  {
+    "question": "What is a composition hierarchy?",
+    "options": {
+      "A": "A weak form of a generalization/specialization hierarchy",
+      "B": "A strong form of a generalization/specialization hierarchy",
+      "C": "A weak form of a whole/part relationship",
+      "D": "A strong form of a whole/part relationship"
+    },
+    "answer": "D",
+    "explanation": ""
+  },
+  {
+    "question": "What is an aggregation hierarchy?",
+    "options": {
+      "A": "A weak form of a generalization/specialization hierarchy",
+      "B": "A strong form of a generalization/specialization hierarchy",
+      "C": "A weak form of a whole/part relationship",
+      "D": "A strong form of a whole/part relationship"
+    },
+    "answer": "C",
+    "explanation": ""
+  },
+  {
+    "question": "What does a communication diagram depict?",
+    "options": {
+      "A": "The sequence of external objects communicating with each other",
+      "B": "Classes and their relationships",
+      "C": "Software objects and the sequence of their interactions",
+      "D": "The external objects communicating with the system"
+    },
+    "answer": "C",
+    "explanation": ""
+  },
+  {
+    "question": "What does a sequence diagram depict?",
+    "options": {
+      "A": "The sequence of external objects communicating with each other",
+      "B": "Classes and their relationships",
+      "C": "Software objects and the sequence of their interactions",
+      "D": "The external objects communicating with the system"
+    },
+    "answer": "C",
+    "explanation": ""
+  },
+  {
+    "question": "An input message to a state-dependent control object corresponds to:",
+    "options": {
+      "A": "An event on the internal state machine",
+      "B": "An action on the internal state machine",
+      "C": "A condition on the internal state machine",
+      "D": "A state on the internal state machine"
+    },
+    "answer": "A",
+    "explanation": ""
+  },
+  {
+    "question": "An output message from a state dependent control object corresponds to:",
+    "options": {
+      "A": "An event on the internal state machine",
+      "B": "An action on the internal state machine",
+      "C": "A condition on the internal state machine",
+      "D": "A state on the internal state machine"
+    },
+    "answer": "B",
+    "explanation": ""
+  },
+  {
+    "question": "How is a use case depicted on a use case diagram?",
+    "options": {
+      "A": "An oval",
+      "B": "A stick figure",
+      "C": "A box",
+      "D": "A dashed line"
+    },
+    "answer": "A",
+    "explanation": ""
+  },
+  {
+    "question": "How is an actor depicted on a use case diagram?",
+    "options": {
+      "A": "An oval",
+      "B": "A stick figure",
+      "C": "A box",
+      "D": "A dashed line"
+    },
+    "answer": "B",
+    "explanation": ""
+  },
+  {
+    "question": "An activity diagram can therefore be used to provide a more precise description of the use case, because it shows exactly where in the sequence and what the condition is for an alternative sequence to diverge from the main sequence.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": ""
+  },
+  {
+    "question": "Software Quality Attributes, Scalability is the extent to which the system is capable of growing after its initial deployment.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": ""
+  },
+  {
+    "question": "What is an entry action in a state machine?",
+    "options": {
+      "A": "An action that is performed when the state is entered",
+      "B": "An action that is performed when the state is left",
+      "C": "An action that starts executing when the state is entered and completes executing when the state is left",
+      "D": "An action that executes as a result of a state transition"
+    },
+    "answer": "A",
+    "explanation": ""
+  },
+  {
+    "question": "What is an exit action in a state machine?",
+    "options": {
+      "A": "An action that is performed when the state is entered",
+      "B": "An action that is performed when the state is left",
+      "C": "An action that starts executing when the state is entered and completes executing when the state is left",
+      "D": "An action that executes as a result of a state transition"
+    },
+    "answer": "B",
+    "explanation": ""
+  },
+  {
+    "question": "What is a dynamic view of a software architecture?",
+    "options": {
+      "A": "A view in terms of a module hierarchy",
+      "B": "A view in terms of components and connectors",
+      "C": "A view of the physical configuration in terms of nodes and interconnections",
+      "D": "A view in terms of objects and messages"
+    },
+    "answer": "D",
+    "explanation": ""
+  },
+  {
+    "question": "What is a structural view of a software architecture?",
+    "options": {
+      "A": "A view in terms of a module hierarchy",
+      "B": "A view in terms of components and connectors",
+      "C": "A view of the physical configuration in terms of nodes and interconnections",
+      "D": "A view in terms of objects and messages"
+    },
+    "answer": "B",
+    "explanation": ""
+  },
+  {
+    "question": "What does a statechart diagram depict?",
+    "options": {
+      "A": "Objects and links",
+      "B": "Classes and relationships",
+      "C": "Objects and messages",
+      "D": "States and events"
+    },
+    "answer": "D",
+    "explanation": ""
+  },
+  {
+    "question": "What does an interaction diagram depict?",
+    "options": {
+      "A": "Objects and links",
+      "B": "Classes and relationships",
+      "C": "Objects and messages",
+      "D": "States and events"
+    },
+    "answer": "C",
+    "explanation": ""
+  },
+  {
+    "question": "What approach does the spiral model emphasize?",
+    "options": {
+      "A": "Phased software development",
+      "B": "Throwaway prototyping",
+      "C": "Risk-driven development",
+      "D": "Incremental development"
+    },
+    "answer": "C",
+    "explanation": ""
+  },
+  {
+    "question": "What is evolutionary prototyping?",
+    "options": {
+      "A": "Phased software development",
+      "B": "Throwaway prototyping",
+      "C": "Risk-driven development",
+      "D": "Incremental development"
+    },
+    "answer": "D",
+    "explanation": ""
+  },
+  {
+    "question": "How is a concurrent service designed?",
+    "options": {
+      "A": "One object that responds to requests from clients",
+      "B": "Multiple objects that respond to requests from clients",
+      "C": "One subsystem that responds to requests from clients",
+      "D": "Multiple subsystems that respond to requests from clients"
+    },
+    "answer": "B",
+    "explanation": ""
+  },
+  {
+    "question": "How is a sequential service designed?",
+    "options": {
+      "A": "One object that responds to requests from clients",
+      "B": "Multiple objects that respond to requests from clients",
+      "C": "One subsystem that responds to requests from clients",
+      "D": "Multiple subsystems that respond to requests from clients"
+    },
+    "answer": "A",
+    "explanation": ""
+  },
+  {
     "question": "What is inheritance?",
     "options": {
       "A": "A mechanism for inheriting characteristics from a parent",
@@ -85,17 +323,6 @@ const allQuestions = [
       "D": "Early detection of design flaws"
     },
     "answer": "C",
-    "explanation": ""
-  },
-  {
-    "question": "What is the goal of software validation?",
-    "options": {
-      "A": "Building the system",
-      "B": "Building the right system",
-      "C": "Building the system right",
-      "D": "Testing the system"
-    },
-    "answer": "B",
     "explanation": ""
   },
   {
@@ -209,17 +436,6 @@ const allQuestions = [
     "explanation": ""
   },
   {
-    "question": "What is a composition hierarchy?",
-    "options": {
-      "A": "A weak form of a generalization/specialization hierarchy",
-      "B": "A strong form of a generalization/specialization hierarchy",
-      "C": "A weak form of a whole/part relationship",
-      "D": "A strong form of a whole/part relationship"
-    },
-    "answer": "D",
-    "explanation": ""
-  },
-  {
     "question": "What is an attribute?",
     "options": {
       "A": "A relationship between two classes",
@@ -286,17 +502,6 @@ const allQuestions = [
     "explanation": ""
   },
   {
-    "question": "What does a sequence diagram depict?",
-    "options": {
-      "A": "The sequence of external objects communicating with each other",
-      "B": "Classes and their relationships",
-      "C": "Software objects and the sequence of their interactions",
-      "D": "The external objects communicating with the system"
-    },
-    "answer": "C",
-    "explanation": ""
-  },
-  {
     "question": "What is the generic form of an interaction diagram?",
     "options": {
       "A": "Depicts several objects interacting with each other",
@@ -336,17 +541,6 @@ const allQuestions = [
       "B": "A transition out of each of the substates",
       "C": "A transition out of none of the substates",
       "D": "A transition out of any one of the substates"
-    },
-    "answer": "B",
-    "explanation": ""
-  },
-  {
-    "question": "An output message from a state dependent control object corresponds to:",
-    "options": {
-      "A": "An event on the internal state machine",
-      "B": "An action on the internal state machine",
-      "C": "A condition on the internal state machine",
-      "D": "A state on the internal state machine"
     },
     "answer": "B",
     "explanation": ""
@@ -715,17 +909,6 @@ const allQuestions = [
     "explanation": ""
   },
   {
-    "question": "How is an actor depicted on a use case diagram?",
-    "options": {
-      "A": "An oval",
-      "B": "A stick figure",
-      "C": "A box",
-      "D": "A dashed line"
-    },
-    "answer": "B",
-    "explanation": ""
-  },
-  {
     "question": "What are software structuring criteria?",
     "options": {
       "A": "Fundamental ideas that can be applied to designing a system.",
@@ -825,15 +1008,6 @@ const allQuestions = [
     "explanation": ""
   },
   {
-    "question": "An activity diagram can therefore be used to provide a more precise description of the use case, because it shows exactly where in the sequence and what the condition is for an alternative sequence to diverge from the main sequence.",
-    "options": {
-      "A": "True",
-      "B": "False"
-    },
-    "answer": "A",
-    "explanation": ""
-  },
-  {
     "question": "What can an activity diagram be used for in use case modeling?",
     "options": {
       "A": "To depict the sequence of activities executed by all the use cases in the system",
@@ -864,17 +1038,6 @@ const allQuestions = [
       "D": "A layered hierarchy"
     },
     "answer": "B",
-    "explanation": ""
-  },
-  {
-    "question": "What is an aggregation hierarchy?",
-    "options": {
-      "A": "A weak form of a generalization/specialization hierarchy",
-      "B": "A strong form of a generalization/specialization hierarchy",
-      "C": "A weak form of a whole/part relationship",
-      "D": "A strong form of a whole/part relationship"
-    },
-    "answer": "C",
     "explanation": ""
   },
   {
@@ -911,17 +1074,6 @@ const allQuestions = [
     "explanation": ""
   },
   {
-    "question": "What does a communication diagram depict?",
-    "options": {
-      "A": "The sequence of external objects communicating with each other",
-      "B": "Classes and their relationships",
-      "C": "Software objects and the sequence of their interactions",
-      "D": "The external objects communicating with the system"
-    },
-    "answer": "C",
-    "explanation": ""
-  },
-  {
     "question": "Which of the following is NOT a type of object interaction diagram?",
     "options": {
       "A": "Sequence Diagram",
@@ -941,17 +1093,6 @@ const allQuestions = [
       "D": "A model of system behavior"
     },
     "answer": "B",
-    "explanation": ""
-  },
-  {
-    "question": "What is an entry action in a state machine?",
-    "options": {
-      "A": "An action that is performed when the state is entered",
-      "B": "An action that is performed when the state is left",
-      "C": "An action that starts executing when the state is entered and completes executing when the state is left",
-      "D": "An action that executes as a result of a state transition"
-    },
-    "answer": "A",
     "explanation": ""
   },
   {
@@ -988,17 +1129,6 @@ const allQuestions = [
     "explanation": ""
   },
   {
-    "question": "An input message to a state-dependent control object corresponds to:",
-    "options": {
-      "A": "An event on the internal state machine",
-      "B": "An action on the internal state machine",
-      "C": "A condition on the internal state machine",
-      "D": "A state on the internal state machine"
-    },
-    "answer": "A",
-    "explanation": ""
-  },
-  {
     "question": "What role do software architectural patterns play in the development of an application?",
     "options": {
       "A": "They specify detailed algorithms for specific tasks",
@@ -1018,17 +1148,6 @@ const allQuestions = [
       "D": "Defining separate control objects for each diagram."
     },
     "answer": "C",
-    "explanation": ""
-  },
-  {
-    "question": "What is a structural view of a software architecture?",
-    "options": {
-      "A": "A view in terms of a module hierarchy",
-      "B": "A view in terms of components and connectors",
-      "C": "A view of the physical configuration in terms of nodes and interconnections",
-      "D": "A view in terms of objects and messages"
-    },
-    "answer": "B",
     "explanation": ""
   },
   {
@@ -1274,15 +1393,6 @@ const allQuestions = [
     "explanation": ""
   },
   {
-    "question": "Software Quality Attributes, Scalability is the extent to which the system is capable of growing after its initial deployment.",
-    "options": {
-      "A": "True",
-      "B": "False"
-    },
-    "answer": "A",
-    "explanation": ""
-  },
-  {
     "question": "Which of the following is not addressed by a secure system?",
     "options": {
       "A": "System penetration",
@@ -1313,17 +1423,6 @@ const allQuestions = [
       "D": "A systematic approach for producing a design."
     },
     "answer": "B",
-    "explanation": ""
-  },
-  {
-    "question": "What does a statechart diagram depict?",
-    "options": {
-      "A": "Objects and links",
-      "B": "Classes and relationships",
-      "C": "Objects and messages",
-      "D": "States and events"
-    },
-    "answer": "D",
     "explanation": ""
   },
   {
@@ -1368,17 +1467,6 @@ const allQuestions = [
       "D": "Testing without knowledge of the software internals"
     },
     "answer": "D",
-    "explanation": ""
-  },
-  {
-    "question": "What approach does the spiral model emphasize?",
-    "options": {
-      "A": "Phased software development",
-      "B": "Throwaway prototyping",
-      "C": "Risk-driven development",
-      "D": "Incremental development"
-    },
-    "answer": "C",
     "explanation": ""
   },
   {
@@ -1547,17 +1635,6 @@ const allQuestions = [
     "explanation": ""
   },
   {
-    "question": "What is a dynamic view of a software architecture?",
-    "options": {
-      "A": "A view in terms of a module hierarchy",
-      "B": "A view in terms of components and connectors",
-      "C": "A view of the physical configuration in terms of nodes and interconnections",
-      "D": "A view in terms of objects and messages"
-    },
-    "answer": "D",
-    "explanation": ""
-  },
-  {
     "question": "What is a software architectural pattern?",
     "options": {
       "A": "The structure of the major subsystems of a system",
@@ -1613,34 +1690,12 @@ const allQuestions = [
     "explanation": ""
   },
   {
-    "question": "How is a concurrent service designed?",
-    "options": {
-      "A": "One object that responds to requests from clients",
-      "B": "Multiple objects that respond to requests from clients",
-      "C": "One subsystem that responds to requests from clients",
-      "D": "Multiple subsystems that respond to requests from clients"
-    },
-    "answer": "B",
-    "explanation": ""
-  },
-  {
     "question": "When designing an entity class as a relational table, which of the following is NOT true?",
     "options": {
       "A": "The relational table has multiple primary keys.",
       "B": "The relational table has multiple foreign keys.",
       "C": "The relational table has a primary key.",
       "D": "The relational table has a concatenated primary key."
-    },
-    "answer": "A",
-    "explanation": ""
-  },
-  {
-    "question": "How is a sequential service designed?",
-    "options": {
-      "A": "One object that responds to requests from clients",
-      "B": "Multiple objects that respond to requests from clients",
-      "C": "One subsystem that responds to requests from clients",
-      "D": "Multiple subsystems that respond to requests from clients"
     },
     "answer": "A",
     "explanation": ""
@@ -1841,17 +1896,6 @@ const allQuestions = [
       "D": "Statechart and communication diagram"
     },
     "answer": "B",
-    "explanation": ""
-  },
-  {
-    "question": "What does an interaction diagram depict?",
-    "options": {
-      "A": "Objects and links",
-      "B": "Classes and relationships",
-      "C": "Objects and messages",
-      "D": "States and events"
-    },
-    "answer": "C",
     "explanation": ""
   },
   {
@@ -2174,17 +2218,6 @@ const allQuestions = [
     "explanation": ""
   },
   {
-    "question": "What is the goal of software verification?",
-    "options": {
-      "A": "Building the system",
-      "B": "Building the right system",
-      "C": "Building the system right",
-      "D": "Testing the system"
-    },
-    "answer": "C",
-    "explanation": ""
-  },
-  {
     "question": "What happens in a Call/Return pattern?",
     "options": {
       "A": "A calling operation in the calling object sends a message to an operation (a.k.a. method) in the called object.",
@@ -2411,17 +2444,6 @@ const allQuestions = [
       "B": "Deciding how many copies of a book are needed",
       "C": "Finding the classrooms in a school",
       "D": "Identifying what labs the school has"
-    },
-    "answer": "A",
-    "explanation": ""
-  },
-  {
-    "question": "How is a use case depicted on a use case diagram?",
-    "options": {
-      "A": "An oval",
-      "B": "A stick figure",
-      "C": "A box",
-      "D": "A dashed line"
     },
     "answer": "A",
     "explanation": ""
@@ -2680,17 +2702,6 @@ const allQuestions = [
     "explanation": ""
   },
   {
-    "question": "What is an exit action in a state machine?",
-    "options": {
-      "A": "An action that is performed when the state is entered",
-      "B": "An action that is performed when the state is left",
-      "C": "An action that starts executing when the state is entered and completes executing when the state is left",
-      "D": "An action that executes as a result of a state transition"
-    },
-    "answer": "B",
-    "explanation": ""
-  },
-  {
     "question": "What is a software architecture?",
     "options": {
       "A": "The software inside a building.",
@@ -2699,17 +2710,6 @@ const allQuestions = [
       "D": "The software classes and their relationships."
     },
     "answer": "C",
-    "explanation": ""
-  },
-  {
-    "question": "What is evolutionary prototyping?",
-    "options": {
-      "A": "Phased software development",
-      "B": "Throwaway prototyping",
-      "C": "Risk-driven development",
-      "D": "Incremental development"
-    },
-    "answer": "D",
     "explanation": ""
   },
   {
