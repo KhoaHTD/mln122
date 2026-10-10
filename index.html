@@ -4,243 +4,594 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hệ Thống Học Trắc Nghiệm</title>
+    <title>HCM202 - Ôn Tập Trắc Nghiệm Tư Tưởng Hồ Chí Minh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f3f4f6;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
             margin: 0;
-            padding: 20px;
+            padding: 12px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
         }
 
         .quiz-container {
-            background-color: white;
+            background-color: #ffffff;
             width: 100%;
-            max-width: 1200px;
-            height: 80vh;
-            min-height: 600px;
+            max-width: 1280px;
+            height: calc(88vh - 40px);
+            min-height: 620px;
             display: flex;
-            border: 2px solid #333;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
             position: relative;
+            overflow: hidden;
         }
 
         .left-panel {
-            width: 35%;
-            padding: 20px 20px 20px 60px;
+            width: 38%;
+            padding: 24px 24px 24px 64px;
             position: relative;
             display: flex;
             flex-direction: column;
             overflow-y: auto;
+            background-color: #f8fafc;
         }
 
         .divider {
-            width: 2px;
-            background-color: red;
+            width: 1px;
+            background-color: #e2e8f0;
             height: 100%;
             flex-shrink: 0;
         }
 
         .right-panel {
-            width: 65%;
-            padding: 20px 60px 20px 40px;
+            width: 62%;
+            padding: 24px 64px 24px 32px;
             position: relative;
             overflow-y: auto;
+            background-color: #ffffff;
         }
 
         .nav-btn {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: none;
-            border: none;
-            font-size: 3rem;
-            color: #ccc;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(4px);
+            border: 1px solid #cbd5e1;
+            width: 44px;
+            height: 44px;
+            border-radius: 9999px;
+            font-size: 1.25rem;
+            color: #475569;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
-            transition: color 0.3s;
-            z-index: 10;
+            transition: all 0.2s ease;
+            z-index: 20;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
         }
 
-        .nav-btn:hover {
-            color: #888;
+        .nav-btn:hover:not(:disabled) {
+            background: #ffffff;
+            color: #0f172a;
+            border-color: #94a3b8;
+            transform: translateY(-50%) scale(1.06);
+            box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.1);
         }
 
         .prev-btn {
-            left: 10px;
+            left: 12px;
         }
 
         .next-btn {
-            right: 10px;
+            right: 12px;
         }
 
         .nav-btn:disabled {
-            color: #eee;
+            opacity: 0.3;
             cursor: not-allowed;
+            transform: translateY(-50%);
+            box-shadow: none;
         }
-        
-        .jump-container {
-            margin-bottom: 15px;
+
+        .answer-card {
             display: flex;
             align-items: center;
-            gap: 10px;
-        }
-        
-        .jump-input {
-            width: 60px;
-            padding: 4px 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .question-number-text {
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .instruction-text {
-            font-size: 14px;
-            margin-bottom: 30px;
-            color: #555;
-        }
-
-        .question-content-text {
-            font-size: 15px;
-            margin-bottom: 20px;
-            line-height: 1.5;
-            font-weight: bold;
-        }
-
-        .option-text {
-            font-size: 14px;
-            margin-bottom: 15px;
-            line-height: 1.5;
-            display: flex;
-        }
-
-        .option-letter {
-            margin-right: 10px;
-            font-weight: bold;
-        }
-
-        .answer-section {
-            margin-top: 20px;
-        }
-
-        .answer-row {
-            display: flex;
-            align-items: center;
+            padding: 10px 14px;
             margin-bottom: 10px;
+            background: #ffffff;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 10px;
             cursor: pointer;
+            transition: all 0.15s ease;
+            user-select: none;
         }
 
-        .answer-row input[type="radio"],
-        .answer-row input[type="checkbox"] {
+        .answer-card:hover {
+            border-color: #93c5fd;
+            background-color: #f0f7ff;
+            transform: translateY(-1px);
+        }
+
+        .answer-card input {
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+            accent-color: #2563eb;
+            margin-right: 12px;
+        }
+
+        .badge-letter {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 6px;
+            background-color: #e2e8f0;
+            color: #334155;
+            font-weight: 700;
+            font-size: 13px;
             margin-right: 10px;
-            cursor: pointer;
-            width: 16px;
-            height: 16px;
+            flex-shrink: 0;
+            transition: all 0.15s ease;
         }
 
-        .answer-label {
-            font-size: 16px;
-            cursor: pointer;
-            font-weight: bold;
+        .answer-card:hover .badge-letter {
+            background-color: #bfdbfe;
+            color: #1d4ed8;
         }
 
+        .answer-card.selected {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+        }
+
+        .answer-card.selected .badge-letter {
+            background-color: #3b82f6;
+            color: #ffffff;
+        }
+
+        /* Option row in right panel */
+        .option-item {
+            display: flex;
+            padding: 14px 16px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            background-color: #ffffff;
+            line-height: 1.6;
+            font-size: 15px;
+            transition: all 0.2s ease;
+        }
+
+        .option-item .option-bullet {
+            font-weight: 700;
+            color: #2563eb;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .option-item.opt-correct {
+            border-color: #10b981;
+            background-color: #ecfdf5;
+            box-shadow: 0 0 0 1px #10b981;
+        }
+
+        .option-item.opt-correct .option-bullet {
+            color: #059669;
+        }
+
+        .option-item.opt-wrong {
+            border-color: #f43f5e;
+            background-color: #fff1f2;
+            box-shadow: 0 0 0 1px #f43f5e;
+        }
+
+        .option-item.opt-wrong .option-bullet {
+            color: #e11d48;
+        }
+
+        /* Result styling */
         .result-container {
-            margin-top: 20px;
-            padding: 15px;
-            border-radius: 4px;
+            margin-top: 18px;
+            padding: 16px;
+            border-radius: 12px;
             display: none;
+            animation: fadeIn 0.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(4px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .result-correct {
-            background-color: #d1fae5;
+            background-color: #ecfdf5;
             color: #065f46;
-            border: 1px solid #34d399;
+            border: 1.5px solid #6ee7b7;
             display: block;
         }
 
         .result-incorrect {
-            background-color: #fee2e2;
-            color: #991b1b;
-            border: 1px solid #f87171;
+            background-color: #fff1f2;
+            color: #9f1239;
+            border: 1.5px solid #fda4af;
             display: block;
         }
 
-        .explanation {
+        .explanation-text {
             margin-top: 10px;
-            font-size: 14px;
-            font-style: italic;
+            font-size: 13.5px;
+            line-height: 1.6;
+            white-space: pre-line;
+            border-top: 1px dashed rgba(0, 0, 0, 0.15);
+            padding-top: 10px;
+        }
+
+        .citation-box {
+            margin-top: 8px;
+            padding: 6px 10px;
+            border-radius: 6px;
+            background: rgba(0, 0, 0, 0.04);
+            font-size: 12.5px;
+            font-weight: 500;
+        }
+
+        /* Modal Grid */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 50;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        .modal-content {
+            background: #ffffff;
+            width: 100%;
+            max-width: 900px;
+            max-height: 85vh;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        .q-grid-cell {
+            width: 42px;
+            height: 42px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+            background: #f8fafc;
+            color: #334155;
+            transition: all 0.15s ease;
+        }
+
+        .q-grid-cell:hover {
+            transform: scale(1.1);
+            z-index: 2;
+            border-color: #3b82f6;
+        }
+
+        .q-grid-cell.cell-current {
+            outline: 2px solid #2563eb;
+            outline-offset: 1px;
+            font-weight: 700;
+        }
+
+        .q-grid-cell.cell-correct {
+            background-color: #d1fae5;
+            border-color: #34d399;
+            color: #065f46;
+        }
+
+        .q-grid-cell.cell-wrong {
+            background-color: #fee2e2;
+            border-color: #f87171;
+            color: #991b1b;
+        }
+
+        @media (max-width: 768px) {
+            .quiz-container {
+                flex-direction: column;
+                height: auto;
+                min-height: unset;
+            }
+
+            .left-panel {
+                width: 100%;
+                padding: 20px 20px 20px 20px;
+            }
+
+            .divider {
+                width: 100%;
+                height: 1px;
+            }
+
+            .right-panel {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .nav-btn {
+                top: auto;
+                bottom: 12px;
+                transform: none;
+            }
+
+            .prev-btn {
+                left: 16px;
+            }
+
+            .next-btn {
+                right: 16px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="quiz-container">
-        <button class="nav-btn prev-btn" id="prevBtn" onclick="prevQuestion()"
-            aria-label="Previous question">&#10094;</button>
-
-        <!-- Panel Trái -->
-        <div class="left-panel">
-            <div class="jump-container">
-                <span class="question-number-text" id="qNumberDisplay">Question: 1</span>
-                <span>/ <span id="totalQuestionsDisplay"></span></span>
-                <input type="number" id="jumpInput" class="jump-input" placeholder="Go..." min="1">
-            </div>
-            <div class="instruction-text" id="instructionDisplay">(Choose 1 answer)</div>
-
-            <div class="answer-section" id="dynamicAnswers">
-                <!-- Radio buttons/Checkboxes render here -->
-            </div>
-
-            <div id="resultBox" class="result-container">
-                <div id="resultStatus" class="font-bold mb-1"></div>
-                <div id="correctAnswerDisplay" class="text-sm"></div>
-                <div id="explanationDisplay" class="explanation"></div>
+    <!-- Top Navigation / Header -->
+    <header class="w-full max-w-[1280px] mb-3 flex flex-wrap items-center justify-between gap-3 px-2">
+        <div class="flex items-center gap-3">
+            <span class="bg-indigo-600 text-white font-bold text-xs uppercase px-2.5 py-1 rounded-md tracking-wider">
+                HCM202
+            </span>
+            <div>
+                <h1 class="text-base sm:text-lg font-bold text-slate-800 leading-tight">
+                    Tư Tưởng Hồ Chí Minh - Hệ Thống Trắc Nghiệm
+                </h1>
+                <p class="text-xs text-slate-500">
+                    Bộ 648 câu hỏi chuẩn đối chiếu Giáo trình 2021
+                </p>
             </div>
         </div>
 
+        <!-- Quick Stats & Actions -->
+        <div class="flex items-center gap-2 sm:gap-3 text-xs">
+            <div class="flex items-center gap-2 bg-white border border-slate-200 px-3 py-1.5 rounded-lg shadow-sm">
+                <span>Đã làm: <strong id="statAnswered" class="text-slate-800">0</strong>/<span id="statTotal">648</span></span>
+                <span class="text-slate-300">|</span>
+                <span class="text-emerald-600 font-semibold">✓ <span id="statCorrect">0</span></span>
+                <span class="text-slate-300">|</span>
+                <span class="text-rose-600 font-semibold">✗ <span id="statWrong">0</span></span>
+            </div>
+
+            <button onclick="openGridModal()"
+                class="flex items-center gap-1.5 bg-white hover:bg-slate-50 text-slate-700 font-medium border border-slate-300 px-3 py-1.5 rounded-lg shadow-sm transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <span>Lưới câu hỏi</span>
+            </button>
+
+            <button onclick="resetProgress()" title="Làm lại từ đầu"
+                class="bg-white hover:bg-rose-50 text-slate-500 hover:text-rose-600 border border-slate-200 hover:border-rose-200 p-1.5 rounded-lg shadow-sm transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Quiz Main Card -->
+    <div class="quiz-container">
+        <!-- Navigation Buttons -->
+        <button class="nav-btn prev-btn" id="prevBtn" onclick="prevQuestion()"
+            title="Câu trước (Phím ←)" aria-label="Previous question">&#10094;</button>
+
+        <!-- Panel Trái: Điều khiển & Chọn đáp án -->
+        <div class="left-panel">
+            <!-- Header Panel Trái -->
+            <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="flex items-center gap-1.5">
+                    <span class="text-xs uppercase font-bold text-slate-400">Câu</span>
+                    <span class="text-xl font-bold text-blue-600" id="qNumberDisplay">1</span>
+                    <span class="text-xs text-slate-400">/ <span id="totalQuestionsDisplay">648</span></span>
+                </div>
+
+                <div class="flex items-center gap-1.5">
+                    <input type="number" id="jumpInput"
+                        class="w-16 px-2 py-1 text-xs text-center font-medium border border-slate-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        placeholder="Số câu" min="1">
+                    <button onclick="jumpToQuestion()"
+                        class="px-2.5 py-1 text-xs font-semibold bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-md transition">
+                        Đi
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hướng dẫn số đáp án cần chọn -->
+            <div class="text-xs font-medium text-slate-500 mb-4 bg-slate-100 px-2.5 py-1.5 rounded-md inline-block"
+                id="instructionDisplay">
+                (Chọn 1 đáp án)
+            </div>
+
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">
+                Chọn câu trả lời của bạn:
+            </div>
+
+            <!-- Danh sách Radio / Checkbox đáp án -->
+            <div class="answer-section flex-1" id="dynamicAnswers">
+                <!-- Sẽ được render động qua JS -->
+            </div>
+
+            <!-- Quick Action Row -->
+            <div class="flex items-center gap-2 mt-4 pt-3 border-t border-slate-200 text-xs">
+                <button onclick="showAnswerImmediately()"
+                    class="flex-1 py-2 px-3 rounded-lg font-medium bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 transition flex items-center justify-center gap-1">
+                    <span>💡 Hiện đáp án</span>
+                    <kbd class="text-[10px] bg-white border border-amber-300 px-1.5 py-0.5 rounded text-amber-600">Space</kbd>
+                </button>
+                <button onclick="clearCurrentAnswer()"
+                    class="py-2 px-3 rounded-lg font-medium text-slate-600 hover:bg-slate-200 transition" title="Bỏ chọn để làm lại câu này">
+                    ↺ Làm lại
+                </button>
+            </div>
+
+            <!-- Hộp kết quả và giải thích -->
+            <div id="resultBox" class="result-container">
+                <div class="flex items-center justify-between mb-1">
+                    <div id="resultStatus" class="font-bold text-sm"></div>
+                    <div id="correctAnswerDisplay" class="text-xs font-semibold"></div>
+                </div>
+                <div id="explanationDisplay" class="explanation-text"></div>
+            </div>
+        </div>
+
+        <!-- Đường phân cách -->
         <div class="divider"></div>
 
-        <!-- Panel Phải -->
+        <!-- Panel Phải: Nội dung câu hỏi & các phương án đầy đủ -->
         <div class="right-panel">
-            <div class="question-content-text" id="qContentDisplay"></div>
-            <div class="options-container" id="dynamicOptions">
-                <!-- Options render here -->
+            <div class="mb-4">
+                <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded mb-2">
+                    Nội dung câu hỏi
+                </span>
+                <div class="text-base sm:text-lg font-semibold text-slate-800 leading-relaxed" id="qContentDisplay">
+                    <!-- Nội dung câu hỏi -->
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2">
+                    Các phương án lựa chọn
+                </span>
+                <div class="space-y-2.5" id="dynamicOptions">
+                    <!-- Các phương án A, B, C, D render tại đây -->
+                </div>
             </div>
         </div>
 
         <button class="nav-btn next-btn" id="nextBtn" onclick="nextQuestion()"
-            aria-label="Next question">&#10095;</button>
+            title="Câu sau (Phím →)" aria-label="Next question">&#10095;</button>
     </div>
 
-    <script src="questions.js"></script>
+    <!-- Phím tắt hướng dẫn footer -->
+    <footer class="mt-3 text-xs text-slate-500 flex items-center gap-4">
+        <span>Phím tắt:</span>
+        <span><kbd class="bg-white px-1.5 py-0.5 rounded border border-slate-300 text-slate-600">←</kbd> Câu trước</span>
+        <span><kbd class="bg-white px-1.5 py-0.5 rounded border border-slate-300 text-slate-600">→</kbd> Câu sau</span>
+        <span><kbd class="bg-white px-1.5 py-0.5 rounded border border-slate-300 text-slate-600">Space</kbd> Hiện đáp án</span>
+    </footer>
+
+    <!-- Modal Lưới 648 câu hỏi -->
+    <div id="gridModal" class="modal-overlay" onclick="closeGridModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="p-4 border-b border-slate-200 flex items-center justify-between">
+                <div>
+                    <h3 class="font-bold text-base text-slate-800">Danh Sách 648 Câu Hỏi</h3>
+                    <p class="text-xs text-slate-500">Bấm vào câu bất kỳ để chuyển đến nhanh</p>
+                </div>
+                <button onclick="closeGridModal()" class="text-slate-400 hover:text-slate-600 text-xl font-bold p-1">
+                    ✕
+                </button>
+            </div>
+
+            <!-- Legend & Filter -->
+            <div class="px-4 py-2.5 bg-slate-50 border-b border-slate-200 flex flex-wrap items-center gap-4 text-xs">
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3.5 h-3.5 rounded bg-slate-200 border border-slate-300 inline-block"></span>
+                    <span>Chưa làm</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3.5 h-3.5 rounded bg-emerald-100 border border-emerald-400 inline-block"></span>
+                    <span class="text-emerald-700 font-medium">Đúng</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3.5 h-3.5 rounded bg-rose-100 border border-rose-400 inline-block"></span>
+                    <span class="text-rose-700 font-medium">Sai</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3.5 h-3.5 rounded border-2 border-blue-600 inline-block"></span>
+                    <span class="text-blue-700 font-medium">Đang chọn</span>
+                </div>
+            </div>
+
+            <!-- Question Grid List -->
+            <div class="p-4 overflow-y-auto flex-1">
+                <div class="grid grid-cols-6 sm:grid-cols-10 md:grid-cols-12 gap-2" id="gridContainer">
+                    <!-- Cells render via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nạp dữ liệu bộ câu hỏi hcm202.js -->
+    <script src="hcm202.js"></script>
+
     <script>
-        const questionsData = allQuestions.map((q, i) => ({
+        // Chuẩn hóa danh sách câu hỏi từ file hcm202.js
+        const questionsData = (typeof allQuestions !== 'undefined' ? allQuestions : []).map((q, i) => ({
             id: i + 1,
             text: q.question,
-            options: q.options,
-            correctAnswer: q.answer,
+            options: q.options || {},
+            correctAnswer: (q.answer || '').toUpperCase().trim(),
             explanation: q.explanation || ""
         }));
 
-        let currentIndex = parseInt(localStorage.getItem('quiz_currentIndex')) || 0;
-        let userAnswers = JSON.parse(localStorage.getItem('quiz_userAnswers')) || {};
+        // Khởi tạo trạng thái lưu trữ riêng cho bộ câu hỏi HCM202
+        const STORAGE_INDEX_KEY = 'hcm202_currentIndex';
+        const STORAGE_ANSWERS_KEY = 'hcm202_userAnswers';
+
+        let currentIndex = parseInt(localStorage.getItem(STORAGE_INDEX_KEY));
+        if (isNaN(currentIndex) || currentIndex < 0 || currentIndex >= questionsData.length) {
+            currentIndex = 0;
+        }
+
+        let userAnswers = {};
+        try {
+            userAnswers = JSON.parse(localStorage.getItem(STORAGE_ANSWERS_KEY)) || {};
+        } catch (e) {
+            userAnswers = {};
+        }
 
         function saveState() {
-            localStorage.setItem('quiz_currentIndex', currentIndex);
-            localStorage.setItem('quiz_userAnswers', JSON.stringify(userAnswers));
-        } // Lưu dưới dạng chuỗi các đáp án (VD: "A", "ABC")
+            localStorage.setItem(STORAGE_INDEX_KEY, currentIndex);
+            localStorage.setItem(STORAGE_ANSWERS_KEY, JSON.stringify(userAnswers));
+            updateStats();
+        }
 
         const qNumberDisplay = document.getElementById('qNumberDisplay');
         const totalQuestionsDisplay = document.getElementById('totalQuestionsDisplay');
+        const statTotal = document.getElementById('statTotal');
+        const statAnswered = document.getElementById('statAnswered');
+        const statCorrect = document.getElementById('statCorrect');
+        const statWrong = document.getElementById('statWrong');
         const instructionDisplay = document.getElementById('instructionDisplay');
         const qContentDisplay = document.getElementById('qContentDisplay');
         const dynamicAnswers = document.getElementById('dynamicAnswers');
@@ -255,29 +606,35 @@
         const explanationDisplay = document.getElementById('explanationDisplay');
 
         function initQuiz() {
+            if (questionsData.length === 0) {
+                alert("Không tìm thấy dữ liệu câu hỏi trong hcm202.js!");
+                return;
+            }
+
             totalQuestionsDisplay.textContent = questionsData.length;
+            statTotal.textContent = questionsData.length;
+
             loadQuestion(currentIndex);
             updateNavButtons();
-            saveState();
-            
+            updateStats();
+
+            // Nhập số câu và bấm Enter
             jumpInput.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') {
-                    const val = parseInt(this.value);
-                    if (val >= 1 && val <= questionsData.length) {
-                        currentIndex = val - 1;
-                        loadQuestion(currentIndex);
-                        updateNavButtons();
-                        saveState();
-                        this.blur();
-                    } else {
-                        alert("Invalid question number!");
-                    }
+                    jumpToQuestion();
                 }
             });
 
-            document.addEventListener('keydown', function(e) {
+            // Phím tắt bàn phím
+            document.addEventListener('keydown', function (e) {
+                const modal = document.getElementById('gridModal');
+                if (modal.style.display === 'flex') {
+                    if (e.key === 'Escape') closeGridModal();
+                    return;
+                }
+
                 if (document.activeElement === jumpInput) return;
-                
+
                 if (e.key === 'ArrowLeft') {
                     e.preventDefault();
                     prevQuestion();
@@ -291,40 +648,76 @@
             });
         }
 
+        function jumpToQuestion() {
+            const val = parseInt(jumpInput.value);
+            if (val >= 1 && val <= questionsData.length) {
+                currentIndex = val - 1;
+                loadQuestion(currentIndex);
+                updateNavButtons();
+                saveState();
+                jumpInput.blur();
+            } else {
+                alert(`Vui lòng nhập số câu từ 1 đến ${questionsData.length}`);
+            }
+        }
+
         function loadQuestion(index) {
             const q = questionsData[index];
-            qNumberDisplay.textContent = `Question: ${index + 1}`;
+            qNumberDisplay.textContent = index + 1;
             jumpInput.value = index + 1;
             qContentDisplay.textContent = q.text;
-            
-            const numAnswersRequired = q.correctAnswer.length;
-            instructionDisplay.textContent = `(Choose ${numAnswersRequired} answer${numAnswersRequired > 1 ? 's' : ''})`;
+
+            const numAnswersRequired = q.correctAnswer.length || 1;
+            instructionDisplay.textContent = numAnswersRequired > 1
+                ? `(Chọn ${numAnswersRequired} đáp án)`
+                : `(Chọn 1 đáp án)`;
 
             const inputType = numAnswersRequired > 1 ? 'checkbox' : 'radio';
 
-            let leftHTML = '<p class="font-semibold mb-2 text-sm">Select your answer:</p>';
+            let leftHTML = '';
             let rightHTML = '';
 
-            for (let key in q.options) {
+            // Sắp xếp các lựa chọn theo thứ tự A, B, C, D, E...
+            // Ẩn các lựa chọn rỗng theo quy ước của bộ câu hỏi hcm202.js
+            const validKeys = Object.keys(q.options).sort().filter(key => {
+                const val = q.options[key];
+                return val !== undefined && val !== null && String(val).trim().length > 0;
+            });
+
+            validKeys.forEach(key => {
                 leftHTML += `
-                <label class="answer-row">
+                <label class="answer-card" id="ansCard_${key}">
                     <input type="${inputType}" name="userAnswer" value="${key}" onchange="checkAnswer()">
-                    <span class="answer-label">${key}</span>
+                    <span class="badge-letter">${key}</span>
+                    <span class="text-sm font-medium text-slate-700">Lựa chọn ${key}</span>
                 </label>`;
 
                 rightHTML += `
-                <div class="option-text">
-                    <span class="option-letter">${key}.</span>
-                    <span>${q.options[key]}</span>
+                <div class="option-item" id="optItem_${key}">
+                    <span class="option-bullet">${key}.</span>
+                    <span class="text-slate-800">${q.options[key]}</span>
                 </div>`;
-            }
+            });
 
             dynamicAnswers.innerHTML = leftHTML;
             dynamicOptions.innerHTML = rightHTML;
 
-            resultBox.className = 'result-container';
-            resultBox.style.display = 'none';
-
+            // Khôi phục câu trả lời nếu người dùng đã làm câu này trước đó
+            const savedAns = userAnswers[index];
+            if (savedAns) {
+                const inputs = document.getElementsByName('userAnswer');
+                for (let input of inputs) {
+                    if (savedAns.includes(input.value)) {
+                        input.checked = true;
+                        const card = document.getElementById(`ansCard_${input.value}`);
+                        if (card) card.classList.add('selected');
+                    }
+                }
+                showResult(savedAns, q);
+            } else {
+                resultBox.className = 'result-container';
+                resultBox.style.display = 'none';
+            }
         }
 
         function updateNavButtons() {
@@ -335,58 +728,117 @@
         function checkAnswer() {
             const inputs = document.getElementsByName('userAnswer');
             let selected = [];
+
             for (let input of inputs) {
+                const card = document.getElementById(`ansCard_${input.value}`);
                 if (input.checked) {
                     selected.push(input.value);
+                    if (card) card.classList.add('selected');
+                } else {
+                    if (card) card.classList.remove('selected');
                 }
             }
-            
+
             selected.sort();
             const selectedStr = selected.join('');
+
+            const currentQ = questionsData[currentIndex];
+            const numAnswersRequired = currentQ.correctAnswer.length || 1;
+
+            if (selected.length === 0) {
+                delete userAnswers[currentIndex];
+                resultBox.style.display = 'none';
+                clearOptionHighlights();
+                saveState();
+                return;
+            }
+
             userAnswers[currentIndex] = selectedStr;
             saveState();
-            
-            const currentQ = questionsData[currentIndex];
-            const numAnswersRequired = currentQ.correctAnswer.length;
 
-            if (selected.length === numAnswersRequired || selected.length > numAnswersRequired) {
+            if (selected.length >= numAnswersRequired) {
                 showResult(selectedStr, currentQ);
             } else {
                 resultBox.style.display = 'none';
+                clearOptionHighlights();
             }
         }
-        
+
+        function clearCurrentAnswer() {
+            delete userAnswers[currentIndex];
+            const inputs = document.getElementsByName('userAnswer');
+            for (let input of inputs) {
+                input.checked = false;
+                const card = document.getElementById(`ansCard_${input.value}`);
+                if (card) card.classList.remove('selected');
+            }
+            resultBox.style.display = 'none';
+            clearOptionHighlights();
+            saveState();
+        }
+
         function showAnswerImmediately() {
             const currentQ = questionsData[currentIndex];
-            userAnswers[currentIndex] = currentQ.correctAnswer.split('').sort().join('');
+            const correctAnsStr = currentQ.correctAnswer.split('').sort().join('');
+            userAnswers[currentIndex] = correctAnsStr;
             saveState();
-            
+
             const inputs = document.getElementsByName('userAnswer');
             for (let input of inputs) {
                 input.checked = currentQ.correctAnswer.includes(input.value);
+                const card = document.getElementById(`ansCard_${input.value}`);
+                if (card) {
+                    if (input.checked) card.classList.add('selected');
+                    else card.classList.remove('selected');
+                }
             }
-            showResult(userAnswers[currentIndex], currentQ);
+            showResult(correctAnsStr, currentQ);
+        }
+
+        function clearOptionHighlights() {
+            document.querySelectorAll('.option-item').forEach(el => {
+                el.classList.remove('opt-correct', 'opt-wrong');
+            });
         }
 
         function showResult(userAnsStr, questionObj) {
             const correctSorted = questionObj.correctAnswer.split('').sort().join('').toUpperCase();
-            const userSorted = userAnsStr.toUpperCase();
-            
+            const userSorted = (userAnsStr || '').toUpperCase();
+
             const isCorrect = userSorted === correctSorted;
 
             resultBox.style.display = 'block';
 
             if (isCorrect) {
                 resultBox.className = 'result-container result-correct';
-                resultStatus.textContent = "✓ Correct!";
-                correctAnswerDisplay.innerHTML = `Correct answer is: <strong>${questionObj.correctAnswer}</strong>`;
+                resultStatus.innerHTML = '<span class="text-emerald-700">✓ Chính xác!</span>';
+                correctAnswerDisplay.innerHTML = `Đáp án: <strong class="text-emerald-800 text-sm">${questionObj.correctAnswer}</strong>`;
             } else {
                 resultBox.className = 'result-container result-incorrect';
-                resultStatus.textContent = "✗ Incorrect";
-                correctAnswerDisplay.innerHTML = `Correct answer is: <strong>${questionObj.correctAnswer}</strong>`;
+                resultStatus.innerHTML = '<span class="text-rose-700">✗ Chưa chính xác</span>';
+                correctAnswerDisplay.innerHTML = `Đáp án đúng là: <strong class="text-emerald-700 text-sm">${questionObj.correctAnswer}</strong>`;
             }
 
-            explanationDisplay.textContent = questionObj.explanation ? questionObj.explanation : "";
+            // Highlight các phương án ở panel bên phải
+            clearOptionHighlights();
+            const correctChars = questionObj.correctAnswer.split('');
+            correctChars.forEach(ch => {
+                const el = document.getElementById(`optItem_${ch}`);
+                if (el) el.classList.add('opt-correct');
+            });
+
+            if (!isCorrect) {
+                const userChars = userAnsStr.split('');
+                userChars.forEach(ch => {
+                    if (!correctChars.includes(ch)) {
+                        const el = document.getElementById(`optItem_${ch}`);
+                        if (el) el.classList.add('opt-wrong');
+                    }
+                });
+            }
+
+            // Hiển thị phần giải thích và đối chiếu giáo trình
+            explanationDisplay.textContent = questionObj.explanation || "Không có giải thích chi tiết cho câu hỏi này.";
         }
 
         function prevQuestion() {
@@ -407,8 +859,86 @@
             }
         }
 
-        window.onload = initQuiz;
+        function updateStats() {
+            let correctCount = 0;
+            let wrongCount = 0;
+            const answeredKeys = Object.keys(userAnswers);
 
+            answeredKeys.forEach(idxStr => {
+                const idx = parseInt(idxStr);
+                const q = questionsData[idx];
+                if (!q) return;
+
+                const correctSorted = q.correctAnswer.split('').sort().join('').toUpperCase();
+                const userSorted = (userAnswers[idx] || '').toUpperCase();
+
+                if (userSorted === correctSorted) {
+                    correctCount++;
+                } else {
+                    wrongCount++;
+                }
+            });
+
+            statAnswered.textContent = answeredKeys.length;
+            statCorrect.textContent = correctCount;
+            statWrong.textContent = wrongCount;
+        }
+
+        function resetProgress() {
+            if (confirm("Bạn có chắc chắn muốn làm lại từ đầu? Tất cả câu trả lời đã lưu sẽ bị xóa.")) {
+                userAnswers = {};
+                currentIndex = 0;
+                localStorage.removeItem(STORAGE_ANSWERS_KEY);
+                localStorage.setItem(STORAGE_INDEX_KEY, 0);
+                loadQuestion(0);
+                updateNavButtons();
+                updateStats();
+            }
+        }
+
+        // Modal Lưới câu hỏi
+        function openGridModal() {
+            const container = document.getElementById('gridContainer');
+            let html = '';
+
+            for (let i = 0; i < questionsData.length; i++) {
+                const q = questionsData[i];
+                let statusClass = '';
+
+                if (i === currentIndex) {
+                    statusClass += ' cell-current';
+                }
+
+                if (userAnswers[i]) {
+                    const correctSorted = q.correctAnswer.split('').sort().join('').toUpperCase();
+                    const userSorted = userAnswers[i].toUpperCase();
+                    if (userSorted === correctSorted) {
+                        statusClass += ' cell-correct';
+                    } else {
+                        statusClass += ' cell-wrong';
+                    }
+                }
+
+                html += `<div class="q-grid-cell ${statusClass}" onclick="selectFromGrid(${i})">${i + 1}</div>`;
+            }
+
+            container.innerHTML = html;
+            document.getElementById('gridModal').style.display = 'flex';
+        }
+
+        function closeGridModal(e) {
+            document.getElementById('gridModal').style.display = 'none';
+        }
+
+        function selectFromGrid(index) {
+            currentIndex = index;
+            loadQuestion(currentIndex);
+            updateNavButtons();
+            saveState();
+            closeGridModal();
+        }
+
+        window.onload = initQuiz;
     </script>
 </body>
 
