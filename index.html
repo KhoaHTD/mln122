@@ -53,6 +53,23 @@
             overflow-y: auto;
         }
 
+        /* Star button on right-panel top-right */
+        .star-btn {
+            position: absolute;
+            top: 14px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 22px;
+            cursor: pointer;
+            color: #ccc;
+            transition: color 0.2s, transform 0.15s;
+            z-index: 5;
+            line-height: 1;
+        }
+        .star-btn:hover { transform: scale(1.2); }
+        .star-btn.starred { color: #f59e0b; }
+
         .nav-btn {
             position: absolute;
             top: 50%;
@@ -66,31 +83,19 @@
             z-index: 10;
         }
 
-        .nav-btn:hover {
-            color: #888;
-        }
+        .nav-btn:hover { color: #888; }
+        .prev-btn { left: 10px; }
+        .next-btn { right: 10px; }
+        .nav-btn:disabled { color: #eee; cursor: not-allowed; }
 
-        .prev-btn {
-            left: 10px;
-        }
-
-        .next-btn {
-            right: 10px;
-        }
-
-        .nav-btn:disabled {
-            color: #eee;
-            cursor: not-allowed;
-        }
-        
         .jump-container {
             margin-bottom: 15px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             flex-wrap: wrap;
         }
-        
+
         .jump-input {
             width: 60px;
             padding: 4px 8px;
@@ -98,10 +103,7 @@
             border-radius: 4px;
         }
 
-        .question-number-text {
-            font-size: 14px;
-            font-weight: bold;
-        }
+        .question-number-text { font-size: 14px; font-weight: bold; }
 
         .instruction-text {
             font-size: 14px;
@@ -123,14 +125,9 @@
             display: flex;
         }
 
-        .option-letter {
-            margin-right: 10px;
-            font-weight: bold;
-        }
+        .option-letter { margin-right: 10px; font-weight: bold; }
 
-        .answer-section {
-            margin-top: 20px;
-        }
+        .answer-section { margin-top: 20px; }
 
         .answer-row {
             display: flex;
@@ -147,11 +144,7 @@
             height: 16px;
         }
 
-        .answer-label {
-            font-size: 16px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+        .answer-label { font-size: 16px; cursor: pointer; font-weight: bold; }
 
         .result-container {
             margin-top: 20px;
@@ -181,13 +174,32 @@
             white-space: pre-line;
         }
 
+        /* Highlight keywords in explanation */
+        .expl-warning {
+            display: inline-block;
+            background-color: #fef3c7;
+            color: #92400e;
+            font-weight: bold;
+            font-style: normal;
+            border-left: 3px solid #f59e0b;
+            padding: 1px 5px;
+            border-radius: 3px;
+        }
+        .expl-caution {
+            display: inline-block;
+            background-color: #fee2e2;
+            color: #991b1b;
+            font-weight: bold;
+            font-style: normal;
+            border-left: 3px solid #f87171;
+            padding: 1px 5px;
+            border-radius: 3px;
+        }
+
         /* Modal lưới câu hỏi */
         .modal-overlay {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background-color: rgba(0, 0, 0, 0.5);
             display: none;
             align-items: center;
@@ -216,27 +228,22 @@
             cursor: pointer;
             border-radius: 4px;
             user-select: none;
+            position: relative;
         }
+        .grid-item:hover { background: #e5e7eb; }
+        .grid-item.current { outline: 2px solid #2563eb; font-weight: bold; }
+        .grid-item.starred { background-color: #fef9c3; border-color: #f59e0b; color: #92400e; }
+        .grid-item.starred.current { outline: 2px solid #2563eb; }
 
-        .grid-item:hover {
-            background: #e5e7eb;
-        }
-
-        .grid-item.current {
-            outline: 2px solid #2563eb;
-            font-weight: bold;
-        }
-
-        .grid-item.correct {
-            background-color: #d1fae5;
-            border-color: #34d399;
-            color: #065f46;
-        }
-
-        .grid-item.incorrect {
-            background-color: #fee2e2;
-            border-color: #f87171;
-            color: #991b1b;
+        /* Dataset select dropdown */
+        .dataset-select {
+            padding: 3px 6px;
+            font-size: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #f9fafb;
+            cursor: pointer;
+            max-width: 130px;
         }
     </style>
 </head>
@@ -253,7 +260,12 @@
                 <span class="question-number-text" id="qNumberDisplay">Question: 1</span>
                 <span>/ <span id="totalQuestionsDisplay"></span></span>
                 <input type="number" id="jumpInput" class="jump-input" placeholder="Go..." min="1">
-                <button onclick="openGridModal()" id="gridBtn" class="border border-gray-400 text-xs px-2 py-1 rounded bg-gray-100 hover:bg-gray-200 cursor-pointer">Lưới câu hỏi</button>
+                <select id="datasetSelect" class="dataset-select" onchange="switchDataset(this.value)">
+                    <option value="standard">HCM202 (gốc)</option>
+                    <option value="verified">HCM202 (rà soát)</option>
+                </select>
+                <button onclick="openGridModal()" id="gridBtn"
+                    class="border border-gray-400 text-xs px-2 py-1 rounded bg-gray-100 hover:bg-gray-200 cursor-pointer">Lưới câu hỏi</button>
             </div>
             <div class="instruction-text" id="instructionDisplay">(Choose 1 answer)</div>
 
@@ -272,6 +284,9 @@
 
         <!-- Panel Phải -->
         <div class="right-panel">
+            <!-- Star button -->
+            <button id="starBtn" class="star-btn" onclick="toggleStar()" title="Đánh dấu câu này">☆</button>
+
             <div class="question-content-text" id="qContentDisplay"></div>
             <div class="options-container" id="dynamicOptions">
                 <!-- Options render here -->
@@ -289,58 +304,99 @@
                 <h3 style="font-weight: bold; font-size: 16px;">Danh Sách Câu Hỏi</h3>
                 <button onclick="closeGridModal()" style="background: none; border: none; font-size: 20px; cursor: pointer;">✕</button>
             </div>
-            <div style="margin-bottom: 12px; font-size: 13px; color: #555;">
-                Bấm vào số câu bất kỳ để chuyển nhanh đến câu đó (Câu hiện tại có viền xanh):
+            <div style="margin-bottom: 12px; font-size: 13px; color: #555; display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+                <span>Bấm vào số câu để chuyển nhanh.</span>
+                <span style="display:inline-flex;align-items:center;gap:4px;">
+                    <span style="display:inline-block;width:12px;height:12px;background:#fef9c3;border:1px solid #f59e0b;border-radius:2px;"></span>
+                    Đã đánh dấu ★
+                </span>
+                <span style="display:inline-flex;align-items:center;gap:4px;">
+                    <span style="display:inline-block;width:12px;height:12px;outline:2px solid #2563eb;border-radius:2px;"></span>
+                    Đang xem
+                </span>
             </div>
             <div id="gridContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(42px, 1fr)); gap: 6px; overflow-y: auto; max-height: 60vh;">
             </div>
         </div>
     </div>
 
+    <!-- Load cả hai bộ câu hỏi -->
     <script src="hcm202.js"></script>
+    <script src="hcm202_verified.js"></script>
     <script>
-        const questionsData = allQuestions.map((q, i) => ({
-            id: i + 1,
-            text: q.question,
-            options: q.options,
-            correctAnswer: q.answer,
-            explanation: q.explanation || ""
-        }));
+        // ── Dữ liệu hai bộ câu hỏi ─────────────────────────────────────
+        const datasets = {
+            standard: (typeof allQuestions !== 'undefined' ? allQuestions : []).map((q, i) => ({
+                id: i + 1,
+                text: q.question,
+                options: q.options || {},
+                correctAnswer: (q.answer || '').toUpperCase().trim(),
+                explanation: q.explanation || ""
+            })),
+            verified: (typeof allQuestionsVerified !== 'undefined' ? allQuestionsVerified : []).map((q, i) => ({
+                id: i + 1,
+                text: q.question,
+                options: q.options || {},
+                correctAnswer: (q.answer || '').toUpperCase().trim(),
+                explanation: q.explanation || ""
+            }))
+        };
+
+        // ── Trạng thái ─────────────────────────────────────────────────
+        let currentDataset = localStorage.getItem('quiz_dataset') || 'standard';
+        let questionsData  = datasets[currentDataset];
 
         let currentIndex = parseInt(localStorage.getItem('quiz_currentIndex')) || 0;
-        if (currentIndex < 0 || currentIndex >= questionsData.length) {
-            currentIndex = 0;
+        if (currentIndex < 0 || currentIndex >= questionsData.length) currentIndex = 0;
+
+        // starred: lưu riêng cho từng bộ
+        let starredStandard = JSON.parse(localStorage.getItem('quiz_starred_standard') || '[]');
+        let starredVerified  = JSON.parse(localStorage.getItem('quiz_starred_verified')  || '[]');
+
+        function getStarred() {
+            return currentDataset === 'verified' ? starredVerified : starredStandard;
+        }
+        function saveStarred() {
+            if (currentDataset === 'verified') {
+                localStorage.setItem('quiz_starred_verified', JSON.stringify(starredVerified));
+            } else {
+                localStorage.setItem('quiz_starred_standard', JSON.stringify(starredStandard));
+            }
         }
 
-        // Xóa sạch trạng thái lưu câu cũ
         localStorage.removeItem('quiz_userAnswers');
 
         function saveState() {
             localStorage.setItem('quiz_currentIndex', currentIndex);
+            localStorage.setItem('quiz_dataset', currentDataset);
         }
 
-        const qNumberDisplay = document.getElementById('qNumberDisplay');
-        const totalQuestionsDisplay = document.getElementById('totalQuestionsDisplay');
-        const instructionDisplay = document.getElementById('instructionDisplay');
-        const qContentDisplay = document.getElementById('qContentDisplay');
-        const dynamicAnswers = document.getElementById('dynamicAnswers');
-        const dynamicOptions = document.getElementById('dynamicOptions');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const jumpInput = document.getElementById('jumpInput');
+        // ── DOM refs ───────────────────────────────────────────────────
+        const qNumberDisplay      = document.getElementById('qNumberDisplay');
+        const totalQDisplay       = document.getElementById('totalQuestionsDisplay');
+        const instructionDisplay  = document.getElementById('instructionDisplay');
+        const qContentDisplay     = document.getElementById('qContentDisplay');
+        const dynamicAnswers      = document.getElementById('dynamicAnswers');
+        const dynamicOptions      = document.getElementById('dynamicOptions');
+        const prevBtn             = document.getElementById('prevBtn');
+        const nextBtn             = document.getElementById('nextBtn');
+        const jumpInput           = document.getElementById('jumpInput');
+        const resultBox           = document.getElementById('resultBox');
+        const resultStatus        = document.getElementById('resultStatus');
+        const correctAnswerDisplay= document.getElementById('correctAnswerDisplay');
+        const explanationDisplay  = document.getElementById('explanationDisplay');
+        const starBtn             = document.getElementById('starBtn');
+        const datasetSelect       = document.getElementById('datasetSelect');
 
-        const resultBox = document.getElementById('resultBox');
-        const resultStatus = document.getElementById('resultStatus');
-        const correctAnswerDisplay = document.getElementById('correctAnswerDisplay');
-        const explanationDisplay = document.getElementById('explanationDisplay');
-
+        // ── Init ──────────────────────────────────────────────────────
         function initQuiz() {
-            totalQuestionsDisplay.textContent = questionsData.length;
+            datasetSelect.value = currentDataset;
+            totalQDisplay.textContent = questionsData.length;
             loadQuestion(currentIndex);
             updateNavButtons();
             saveState();
-            
-            jumpInput.addEventListener('keypress', function (e) {
+
+            jumpInput.addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') {
                     const val = parseInt(this.value);
                     if (val >= 1 && val <= questionsData.length) {
@@ -350,45 +406,48 @@
                         saveState();
                         this.blur();
                     } else {
-                        alert("Invalid question number!");
+                        alert('Invalid question number!');
                     }
                 }
             });
 
             document.addEventListener('keydown', function(e) {
-                const modal = document.getElementById('gridModal');
-                if (modal.style.display === 'flex') {
+                if (document.getElementById('gridModal').style.display === 'flex') {
                     if (e.key === 'Escape') closeGridModal();
                     return;
                 }
-
                 if (document.activeElement === jumpInput) return;
-                
-                if (e.key === 'ArrowLeft') {
-                    e.preventDefault();
-                    prevQuestion();
-                } else if (e.key === 'ArrowRight') {
-                    e.preventDefault();
-                    nextQuestion();
-                } else if (e.code === 'Space') {
-                    e.preventDefault();
-                    showAnswerImmediately();
-                }
+                if (e.key === 'ArrowLeft')  { e.preventDefault(); prevQuestion(); }
+                else if (e.key === 'ArrowRight') { e.preventDefault(); nextQuestion(); }
+                else if (e.code === 'Space') { e.preventDefault(); showAnswerImmediately(); }
             });
         }
 
+        // ── Switch dataset ─────────────────────────────────────────────
+        function switchDataset(value) {
+            currentDataset = value;
+            questionsData  = datasets[value];
+            currentIndex   = 0;
+            totalQDisplay.textContent = questionsData.length;
+            loadQuestion(currentIndex);
+            updateNavButtons();
+            saveState();
+        }
+
+        // ── Load question ─────────────────────────────────────────────
         function loadQuestion(index) {
             const q = questionsData[index];
             qNumberDisplay.textContent = `Question: ${index + 1}`;
             jumpInput.value = index + 1;
             qContentDisplay.textContent = q.text;
-            
-            const numAnswersRequired = q.correctAnswer.length;
-            instructionDisplay.textContent = `(Choose ${numAnswersRequired} answer${numAnswersRequired > 1 ? 's' : ''})`;
+
+            const numAnswersRequired = q.correctAnswer.length || 1;
+            instructionDisplay.textContent =
+                `(Choose ${numAnswersRequired} answer${numAnswersRequired > 1 ? 's' : ''})`;
 
             const inputType = numAnswersRequired > 1 ? 'checkbox' : 'radio';
 
-            let leftHTML = '<p class="font-semibold mb-2 text-sm">Select your answer:</p>';
+            let leftHTML  = '<p class="font-semibold mb-2 text-sm">Select your answer:</p>';
             let rightHTML = '';
 
             for (let key in q.options) {
@@ -398,7 +457,6 @@
                     <input type="${inputType}" name="userAnswer" value="${key}" onchange="checkAnswer()">
                     <span class="answer-label">${key}</span>
                 </label>`;
-
                 rightHTML += `
                 <div class="option-text">
                     <span class="option-letter">${key}.</span>
@@ -411,65 +469,82 @@
 
             resultBox.className = 'result-container';
             resultBox.style.display = 'none';
+
+            // Update star button state
+            updateStarBtn(index);
         }
 
+        // ── Nav buttons ───────────────────────────────────────────────
         function updateNavButtons() {
             prevBtn.disabled = currentIndex === 0;
             nextBtn.disabled = currentIndex === questionsData.length - 1;
         }
 
+        // ── Check / Show answer ───────────────────────────────────────
         function checkAnswer() {
-            const inputs = document.getElementsByName('userAnswer');
-            let selected = [];
-            for (let input of inputs) {
-                if (input.checked) {
-                    selected.push(input.value);
-                }
+            const inputs  = document.getElementsByName('userAnswer');
+            let selected  = [];
+            for (let inp of inputs) {
+                if (inp.checked) selected.push(inp.value);
             }
-            
             selected.sort();
-            const selectedStr = selected.join('');
-            
-            const currentQ = questionsData[currentIndex];
+            const currentQ          = questionsData[currentIndex];
             const numAnswersRequired = currentQ.correctAnswer.length;
-
-            if (selected.length === numAnswersRequired || selected.length > numAnswersRequired) {
-                showResult(selectedStr, currentQ);
+            if (selected.length >= numAnswersRequired) {
+                showResult(selected.join(''), currentQ);
             } else {
                 resultBox.style.display = 'none';
             }
         }
-        
+
         function showAnswerImmediately() {
             const currentQ = questionsData[currentIndex];
-            const inputs = document.getElementsByName('userAnswer');
-            for (let input of inputs) {
-                input.checked = currentQ.correctAnswer.includes(input.value);
+            const inputs   = document.getElementsByName('userAnswer');
+            for (let inp of inputs) {
+                inp.checked = currentQ.correctAnswer.includes(inp.value);
             }
             showResult(currentQ.correctAnswer, currentQ);
         }
 
         function showResult(userAnsStr, questionObj) {
             const correctSorted = questionObj.correctAnswer.split('').sort().join('').toUpperCase();
-            const userSorted = userAnsStr.toUpperCase();
-            
-            const isCorrect = userSorted === correctSorted;
+            const userSorted    = (userAnsStr || '').toUpperCase();
+            const isCorrect     = userSorted === correctSorted;
 
             resultBox.style.display = 'block';
-
             if (isCorrect) {
                 resultBox.className = 'result-container result-correct';
-                resultStatus.textContent = "✓ Correct!";
-                correctAnswerDisplay.innerHTML = `Correct answer is: <strong>${questionObj.correctAnswer}</strong>`;
+                resultStatus.textContent = '✓ Correct!';
             } else {
                 resultBox.className = 'result-container result-incorrect';
-                resultStatus.textContent = "✗ Incorrect";
-                correctAnswerDisplay.innerHTML = `Correct answer is: <strong>${questionObj.correctAnswer}</strong>`;
+                resultStatus.textContent = '✗ Incorrect';
             }
+            correctAnswerDisplay.innerHTML =
+                `Correct answer is: <strong>${questionObj.correctAnswer}</strong>`;
 
-            explanationDisplay.textContent = questionObj.explanation ? questionObj.explanation : "";
+            // Render explanation with highlighted keywords
+            explanationDisplay.innerHTML = renderExplanation(questionObj.explanation || '');
         }
 
+        // Highlight ĐÁP ÁN CHUẨN HƠN and CẦN KIỂM CHỨNG in explanation
+        function renderExplanation(text) {
+            if (!text) return '';
+            // Escape HTML first
+            const escaped = text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+            // Highlight phrases (case-insensitive-ish, these are fixed strings)
+            let html = escaped
+                .replace(/(ĐÁP ÁN CHUẨN HƠN[^:\n]*:?)/g,
+                    '<span class="expl-caution">$1</span>')
+                .replace(/(CẦN KIỂM CHỨNG[^:\n]*:?)/g,
+                    '<span class="expl-warning">$1</span>')
+                .replace(/(LƯU Ý[^:\n]*:?)/g,
+                    '<span class="expl-warning">$1</span>');
+            // Preserve line breaks
+            html = html.replace(/\n/g, '<br>');
+            return html;
+        }
+
+        // ── Prev / Next ───────────────────────────────────────────────
         function prevQuestion() {
             if (currentIndex > 0) {
                 currentIndex--;
@@ -478,7 +553,6 @@
                 saveState();
             }
         }
-
         function nextQuestion() {
             if (currentIndex < questionsData.length - 1) {
                 currentIndex++;
@@ -488,14 +562,49 @@
             }
         }
 
-        // Modal Lưới câu hỏi
+        // ── Star / Bookmark ───────────────────────────────────────────
+        function updateStarBtn(index) {
+            const starred = getStarred();
+            if (starred.includes(index)) {
+                starBtn.textContent = '★';
+                starBtn.classList.add('starred');
+                starBtn.title = 'Bỏ đánh dấu câu này';
+            } else {
+                starBtn.textContent = '☆';
+                starBtn.classList.remove('starred');
+                starBtn.title = 'Đánh dấu câu này';
+            }
+        }
+
+        function toggleStar() {
+            const starred = getStarred();
+            const pos = starred.indexOf(currentIndex);
+            if (pos === -1) {
+                starred.push(currentIndex);
+            } else {
+                starred.splice(pos, 1);
+            }
+            // Sync back
+            if (currentDataset === 'verified') {
+                starredVerified = starred;
+            } else {
+                starredStandard = starred;
+            }
+            saveStarred();
+            updateStarBtn(currentIndex);
+        }
+
+        // ── Grid Modal ────────────────────────────────────────────────
         function openGridModal() {
             const container = document.getElementById('gridContainer');
+            const starred   = getStarred();
             let html = '';
             for (let i = 0; i < questionsData.length; i++) {
                 let cls = 'grid-item';
                 if (i === currentIndex) cls += ' current';
-                html += `<div class="${cls}" onclick="selectFromGrid(${i})">${i + 1}</div>`;
+                if (starred.includes(i)) cls += ' starred';
+                const icon = starred.includes(i) ? '★' : '';
+                html += `<div class="${cls}" onclick="selectFromGrid(${i})" title="Câu ${i + 1}">${i + 1}${icon ? '<br>' + icon : ''}</div>`;
             }
             container.innerHTML = html;
             document.getElementById('gridModal').style.display = 'flex';
@@ -514,7 +623,6 @@
         }
 
         window.onload = initQuiz;
-
     </script>
 </body>
 
