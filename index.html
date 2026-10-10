@@ -289,11 +289,8 @@
                 <h3 style="font-weight: bold; font-size: 16px;">Danh Sách Câu Hỏi</h3>
                 <button onclick="closeGridModal()" style="background: none; border: none; font-size: 20px; cursor: pointer;">✕</button>
             </div>
-            <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 12px;">
-                <span style="display: flex; align-items: center; gap: 4px;"><span style="display:inline-block; width:12px; height:12px; background:#f9f9f9; border:1px solid #ccc;"></span> Chưa làm</span>
-                <span style="display: flex; align-items: center; gap: 4px;"><span style="display:inline-block; width:12px; height:12px; background:#d1fae5; border:1px solid #34d399;"></span> Đúng</span>
-                <span style="display: flex; align-items: center; gap: 4px;"><span style="display:inline-block; width:12px; height:12px; background:#fee2e2; border:1px solid #f87171;"></span> Sai</span>
-                <span style="display: flex; align-items: center; gap: 4px;"><span style="display:inline-block; width:12px; height:12px; outline:2px solid #2563eb;"></span> Đang xem</span>
+            <div style="margin-bottom: 12px; font-size: 13px; color: #555;">
+                Bấm vào số câu bất kỳ để chuyển nhanh đến câu đó (Câu hiện tại có viền xanh):
             </div>
             <div id="gridContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(42px, 1fr)); gap: 6px; overflow-y: auto; max-height: 60vh;">
             </div>
@@ -314,11 +311,12 @@
         if (currentIndex < 0 || currentIndex >= questionsData.length) {
             currentIndex = 0;
         }
-        let userAnswers = JSON.parse(localStorage.getItem('quiz_userAnswers')) || {};
+
+        // Xóa sạch trạng thái lưu câu cũ
+        localStorage.removeItem('quiz_userAnswers');
 
         function saveState() {
             localStorage.setItem('quiz_currentIndex', currentIndex);
-            localStorage.setItem('quiz_userAnswers', JSON.stringify(userAnswers));
         }
 
         const qNumberDisplay = document.getElementById('qNumberDisplay');
@@ -411,16 +409,8 @@
             dynamicAnswers.innerHTML = leftHTML;
             dynamicOptions.innerHTML = rightHTML;
 
-            if (userAnswers[index]) {
-                const inputs = document.getElementsByName('userAnswer');
-                for (let input of inputs) {
-                    input.checked = userAnswers[index].includes(input.value);
-                }
-                showResult(userAnswers[index], q);
-            } else {
-                resultBox.className = 'result-container';
-                resultBox.style.display = 'none';
-            }
+            resultBox.className = 'result-container';
+            resultBox.style.display = 'none';
         }
 
         function updateNavButtons() {
@@ -439,8 +429,6 @@
             
             selected.sort();
             const selectedStr = selected.join('');
-            userAnswers[currentIndex] = selectedStr;
-            saveState();
             
             const currentQ = questionsData[currentIndex];
             const numAnswersRequired = currentQ.correctAnswer.length;
@@ -454,14 +442,11 @@
         
         function showAnswerImmediately() {
             const currentQ = questionsData[currentIndex];
-            userAnswers[currentIndex] = currentQ.correctAnswer.split('').sort().join('');
-            saveState();
-            
             const inputs = document.getElementsByName('userAnswer');
             for (let input of inputs) {
                 input.checked = currentQ.correctAnswer.includes(input.value);
             }
-            showResult(userAnswers[currentIndex], currentQ);
+            showResult(currentQ.correctAnswer, currentQ);
         }
 
         function showResult(userAnsStr, questionObj) {
@@ -508,18 +493,8 @@
             const container = document.getElementById('gridContainer');
             let html = '';
             for (let i = 0; i < questionsData.length; i++) {
-                const q = questionsData[i];
                 let cls = 'grid-item';
                 if (i === currentIndex) cls += ' current';
-                if (userAnswers[i]) {
-                    const correctSorted = q.correctAnswer.split('').sort().join('').toUpperCase();
-                    const userSorted = userAnswers[i].toUpperCase();
-                    if (userSorted === correctSorted) {
-                        cls += ' correct';
-                    } else {
-                        cls += ' incorrect';
-                    }
-                }
                 html += `<div class="${cls}" onclick="selectFromGrid(${i})">${i + 1}</div>`;
             }
             container.innerHTML = html;
