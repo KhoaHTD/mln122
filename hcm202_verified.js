@@ -11,7 +11,7 @@
 //
 const allQuestionsVerified = [
   {
-    "question": "Theo Hồ Chí Minh, biện pháp cơ bản nhất để xây dựng chủ nghĩa xã hội là:(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, biện pháp cơ bản nhất để xây dựng chủ nghĩa xã hội là:",
     "options": {
       "A": "Đem của dân, tài dân, sức dân làm lợi cho dân",
       "B": "Nhà nước phải ban phát từ trên xuống",
@@ -22,7 +22,7 @@ const allQuestionsVerified = [
     "explanation": "Nhân dân là chủ thể xây dựng xã hội mới và nội lực giữ vai trò quyết định; vì vậy phải huy động sức dân để phục vụ lợi ích của dân. Giáo trình diễn giải nội dung này, không chép nguyên văn cụm từ của đáp án A.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 57,59-60."
   },
   {
-    "question": "Nói về đạo đức cách mạng Hồ Chí Minh chi rõ: \"Vì muốn giải phóng cho dân tộc, giải phóng cho loài người là một công việc to tát, mà tự mình không có đạo đức, không có căn bản, tự mình đã hủ hóa, xấu xa thì còn làm nổi việc gì?\". Câu nói trên của Hồ Chí Minh đề cập đến vấn đề gì sau đây ?(NHUNG HOÀNG)",
+    "question": "Nói về đạo đức cách mạng Hồ Chí Minh chi rõ: \"Vì muốn giải phóng cho dân tộc, giải phóng cho loài người là một công việc to tát, mà tự mình không có đạo đức, không có căn bản, tự mình đã hủ hóa, xấu xa thì còn làm nổi việc gì?\". Câu nói trên của Hồ Chí Minh đề cập đến vấn đề gì sau đây ?",
     "options": {
       "A": "Vai trò và sức mạnh của đạo đức",
       "B": "Chuẩn mực và nguyên tắc xây dựng đạo đức mới",
@@ -121,7 +121,7 @@ const allQuestionsVerified = [
     "explanation": "Cách mạng là sự nghiệp của quần chúng; do đó đại đoàn kết vừa là nhiệm vụ của Đảng lãnh đạo, vừa là yêu cầu và trách nhiệm của toàn dân.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 99.\nGhi chú trong tài liệu: (Kiểu hỏi khác: Theo tư tưởng Hồ Chí Minh thì đoàn kết trước hết là phải đoàn kết như thế nào? A. Toàn dân B. Toàn quân C. Toàn Đảng D. Toàn giai cấp)\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Trong các luận điểm sau đây về văn hóa, luận điểm nào Hồ Chí Minh nói về tính chất của nền văn hóa?(NHUNG HOÀNG)",
+    "question": "Trong các luận điểm sau đây về văn hóa, luận điểm nào Hồ Chí Minh nói về tính chất của nền văn hóa?",
     "options": {
       "A": "Phải nâng cao trình độ văn hóa của nhân dân",
       "B": "Phải xây dựng một nền văn hóa dân tộc, khoa học và đại chúng",
@@ -154,7 +154,7 @@ const allQuestionsVerified = [
     "explanation": "ĐÁP ÁN CHUẨN HƠN: Quy luật chung Mác–Lênin được vận dụng và bổ sung phong trào yêu nước ở Việt Nam; B phù hợp nếu hỏi khác về các yếu tố kết hợp.\nA chỉ bảo vệ được nếu hiểu không khác về nguyên lý nền tảng. Nếu so sánh thành phần của quy luật ra đời, Việt Nam có thêm phong trào yêu nước bên cạnh chủ nghĩa Mác–Lênin và phong trào công nhân. Vì câu dẫn chưa nói rõ tiêu chí, không thể coi một chữ cái đúng duy nhất trong mọi cách hiểu.\nĐáp án trong trường answer vẫn giữ nguyên source Quizlet: A.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 72."
   },
   {
-    "question": "Đối với Hồ Chí Minh, dân ta tài năng, trí tuệ và sáng tạo, họ biết \"giải quyết nhiều vấn đề một cách giản đơn, mau chóng, đầy đủ, mà những người tài giỏi, những đoàn thể to lớn,.... (NHUNG HOÀNG)",
+    "question": "Đối với Hồ Chí Minh, dân ta tài năng, trí tuệ và sáng tạo, họ biết \"giải quyết nhiều vấn đề một cách giản đơn, mau chóng, đầy đủ, mà những người tài giỏi, những đoàn thể to lớn,....",
     "options": {
       "A": "nghĩ mãi không ra\".",
       "B": "nghĩ mãi mới ra\".",
@@ -385,7 +385,7 @@ const allQuestionsVerified = [
     "explanation": "Con người được xem xét trong các quan hệ gia đình, giai cấp, dân tộc và cộng đồng; vì vậy bản chất xã hội là nội dung phù hợp, không phải chỉ một thuộc tính chính trị riêng lẻ.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 136-137.\nGhi chú trong tài liệu: (Kiểu hỏi khác: - Đâu là quan điểm của Hồ Chí Minh về bản chất con người? - Theo Hồ Chí Minh: Con người có tính xã hội, là con người xã hội, thành viên của một cộng đồng xã hội. Được hiểu là? -> Quan điểm của Hồ Chí Minh về xây dựng con người.)"
   },
   {
-    "question": "Theo Hồ Chí Minh, chỉ có ..... mới giải phóng được các dân tộc bị áp bức và giai cấp công nhân toàn thế giới. (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, chỉ có ..... mới giải phóng được các dân tộc bị áp bức và giai cấp công nhân toàn thế giới.",
     "options": {
       "A": "Chủ nghĩa xã hội và chủ nghĩa cộng sản.",
       "B": "Giai cấp công nhân và giai cấp nông dân",
@@ -407,7 +407,7 @@ const allQuestionsVerified = [
     "explanation": "B đúng về năm công bố: Đời sống mới ra đời năm 1947, trình bày việc xây dựng đời sống mới gắn với cần, kiệm, liêm, chính. Không nhầm với Đường cách mệnh năm 1927 hoặc các văn bản lập Đảng năm 1930.\nNguồn bổ sung: Bảo tàng Hồ Chí Minh, Cách mạng theo ý Bác Hồ: https://baotanghochiminh.vn/cach-mang-theo-y-bac-ho.htm"
   },
   {
-    "question": "Đâu là quan điểm của Hồ Chí Minh trong các quan điểm sau?(NHUNG HOÀNG)",
+    "question": "Đâu là quan điểm của Hồ Chí Minh trong các quan điểm sau?",
     "options": {
       "A": "Trong giai đoạn thuộc địa, giải phóng chính trị- Xã hội là trước hết, mỡ đường để giải phóng văn hóa",
       "B": "Trong giai đoạn thuộc địa, giải phóng chính trị - xã hội là trước hết, mở đường để giải phóng nhân loạ",
@@ -418,7 +418,7 @@ const allQuestionsVerified = [
     "explanation": "Ách thống trị thuộc địa kìm hãm cả chính trị, xã hội và văn hóa; giải phóng chính trị-xã hội tạo điều kiện trước tiên cho giải phóng văn hóa.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 119."
   },
   {
-    "question": "Theo Hồ Chí Minh, lực lượng nào sau đây được coi \"là gốc cách mệnh\"?(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, lực lượng nào sau đây được coi \"là gốc cách mệnh\"?",
     "options": {
       "A": "Công nông trí",
       "B": "Công nhân",
@@ -616,7 +616,7 @@ const allQuestionsVerified = [
     "explanation": "ĐÁP ÁN CHUẨN HƠN: Tháng 4-1908; không có lựa chọn khớp hoàn toàn.\nBiên niên tiểu sử tập 1 ghi ngày 12-4-1908. C ghi tháng 5 nên đúng năm nhưng sai tháng theo nguồn này; giáo trình chỉ xác nhận năm.\nĐáp án trong trường answer vẫn giữ nguyên source Quizlet: C.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 28.\nNguồn bổ sung: Hồ Chí Minh – Biên niên tiểu sử – Tập 1, mục 12-4-1908: https://hochiminh.vn/book/cuoc-doi-su-nghiep/bien-nien-tieu-su-ho-chi-minh/ho-chi-minh-bien-nien-tieu-su-tap-1-19-5-1890-1929-21"
   },
   {
-    "question": "Tư tưởng nào sau đây ảnh hưởng chủ yếu đến sự hình thành tư tưởng Hồ Chí Minh? (NHUNG HOÀNG)",
+    "question": "Tư tưởng nào sau đây ảnh hưởng chủ yếu đến sự hình thành tư tưởng Hồ Chí Minh?",
     "options": {
       "A": "Đức hy sinh của Hồi giáo",
       "B": "Đức hy sinh của Nho giáo",
@@ -649,7 +649,7 @@ const allQuestionsVerified = [
     "explanation": "B phù hợp: tháng 8-1942, trên đường sang Trung Quốc, Người bị chính quyền Quốc dân Đảng bắt. Cần phân biệt với lần bị bắt ở Hồng Kông năm 1931.\nNguồn bổ sung: Hồ Chí Minh – Biên niên tiểu sử – Tập 2 (1930–9/1945): https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/book/ho-chi-minh/tieu-su-cuoc-doi-va-su-nghiep/ho-chi-minh-bien-nien-tieu-su-tap-2-1930-91945-22"
   },
   {
-    "question": "Tư tưởng bạo lực cách mạng của Hồ Chí Minh gắn bó hữu cơ với: (NHUNG HOÀNG)",
+    "question": "Tư tưởng bạo lực cách mạng của Hồ Chí Minh gắn bó hữu cơ với:",
     "options": {
       "A": "Nhân văn, hòa bình",
       "B": "Nhân đạo, hòa bình",
@@ -704,7 +704,7 @@ const allQuestionsVerified = [
     "explanation": "Dân chủ trong Đảng phát huy trách nhiệm đảng viên và là cơ sở để đi đến thống nhất; tự phê bình, phê bình củng cố đoàn kết nội bộ.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 75-76.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Theo Hồ Chí Minh, tập trung trong Đảng có nghĩa là thiểu số phục tùng đa số, cấp dưới phục tùng cấp trên, tất cả đảng viên chấp hành: (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, tập trung trong Đảng có nghĩa là thiểu số phục tùng đa số, cấp dưới phục tùng cấp trên, tất cả đảng viên chấp hành:",
     "options": {
       "A": "Vô điều kiện nghị quyết của Tổng bí thư.",
       "B": "Vô điều kiện nghị quyết của Chủ tịch nước.",
@@ -759,7 +759,7 @@ const allQuestionsVerified = [
     "explanation": "Tập thể giúp xem xét nhiều mặt và tránh độc đoán; cá nhân phụ trách xác định trách nhiệm thực hiện, tránh dựa dẫm hoặc không ai chịu trách nhiệm.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 75."
   },
   {
-    "question": "Quy luật ra đời của Đảng Cộng sản Việt Nam được Hồ Chí Minh vạch ra: (NHUNG HOÀNG)",
+    "question": "Quy luật ra đời của Đảng Cộng sản Việt Nam được Hồ Chí Minh vạch ra:",
     "options": {
       "A": "Không phù hợp với tinh thần của chủ nghĩa Mác- Lênin",
       "B": "Trái với tinh thần của chủ nghĩa Mác- Lênin",
@@ -946,7 +946,7 @@ const allQuestionsVerified = [
     "explanation": "Đạo đức được chứng minh bằng hành động và đóng góp thiết thực; hiệu quả thực tế phản ánh sự thống nhất giữa phẩm chất và năng lực, thay cho nói suông.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 125."
   },
   {
-    "question": "Câu nói nào sau đây là của Hồ Chí Minh? (NHUNG HOÀNG)",
+    "question": "Câu nói nào sau đây là của Hồ Chí Minh?",
     "options": {
       "A": "Học không biết chán, dạy không biết mỏi",
       "B": "Học, học nữa, học mãi",
@@ -1023,7 +1023,7 @@ const allQuestionsVerified = [
     "explanation": "Dân chủ bảo đảm các quyền con người và quyền công dân, đồng thời gắn quyền với nghĩa vụ; không giới hạn quyền theo một giai cấp hay nhóm riêng.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 59,89."
   },
   {
-    "question": "Một trong những nội dung chính trong thực hiện cách mạng nước ta hiện nay là:(NHUNG HOÀNG)",
+    "question": "Một trong những nội dung chính trong thực hiện cách mạng nước ta hiện nay là:",
     "options": {
       "A": "Độc lập dân tộc gắn liên với bảo vệ chủ quyền",
       "B": "Độc lập dân tộc gắn liên chủ nghĩa xã hội",
@@ -1078,7 +1078,7 @@ const allQuestionsVerified = [
     "explanation": "Môn học nghiên cứu hệ thống quan điểm Hồ Chí Minh về các vấn đề cơ bản của cách mạng Việt Nam và quá trình vận dụng chúng trong thực tiễn.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 9-10."
   },
   {
-    "question": "Nội dung nào sau đây thuộc luận điểm sáng tạo của Hồ Chí Minh về vấn đề Đảng cộng sản? (NHUNG HOÀNG)",
+    "question": "Nội dung nào sau đây thuộc luận điểm sáng tạo của Hồ Chí Minh về vấn đề Đảng cộng sản?",
     "options": {
       "A": "Về quy luật ra đời của Đảng Cộng sản Việt Nam",
       "B": "Về vấn đề tổ chức của Đảng Cộng sản Việt Nam",
@@ -1089,7 +1089,7 @@ const allQuestionsVerified = [
     "explanation": "ĐÁP ÁN CHUẨN HƠN: A — Quy luật ra đời của Đảng Cộng sản Việt Nam (phù hợp nhất với điểm sáng tạo được nêu cụ thể).\nSự bổ sung phong trào yêu nước vào quy luật ra đời của Đảng là sáng tạo được giáo trình trình bày trực tiếp. C về các nguyên tắc xây dựng Đảng quá rộng; các nguyên tắc nền tảng cũng kế thừa lý luận Mác–Lênin. C không nhất thiết sai trong mọi cách hỏi, nhưng A có căn cứ cụ thể hơn với câu dẫn này.\nĐáp án trong trường answer vẫn giữ nguyên source Quizlet: C.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 72, 75."
   },
   {
-    "question": "Theo Hồ Chí Minh, vi trùng rất độc này đẻ ra... không dám đổi mới sáng tạo. Người đang đề cập đến vấn đề gì?(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, vi trùng rất độc này đẻ ra... không dám đổi mới sáng tạo. Người đang đề cập đến vấn đề gì?",
     "options": {
       "A": "Chủ nghĩa cá nhân",
       "B": "Đế quốc",
@@ -1100,7 +1100,7 @@ const allQuestionsVerified = [
     "explanation": "Chủ nghĩa cá nhân được ví như vi trùng độc vì làm nảy sinh nhiều thói xấu, gây hại người cán bộ, nhân dân và tổ chức Đảng.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 65,135."
   },
   {
-    "question": "Sức mạnh dân tộc trong tư tưởng Hồ Chí Minh bao gồm những thành tố nào?(NHUNG HOÀNG)",
+    "question": "Sức mạnh dân tộc trong tư tưởng Hồ Chí Minh bao gồm những thành tố nào?",
     "options": {
       "A": "Chủ nghĩa yêu nước và văn hóa truyền thống Việt Nam Chủ nghĩa yêu nước và truyền thống văn hóa Việt Nam; tinh thần đoàn kết, ý thức đấu tranh cho độc lập, tự do; và tĩnh thần quốc tế vô sản",
       "B": "Tinh thần đoàn kết, ý thức đấu tranh cho độc lập, tự do",
@@ -1122,7 +1122,7 @@ const allQuestionsVerified = [
     "explanation": "Đạo đức không tự nhiên có sẵn; nó hình thành và củng cố qua giáo dục, tự tu dưỡng và rèn luyện bền bỉ trong thực tiễn.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 136."
   },
   {
-    "question": "Theo quan điểm của Hồ Chí Minh, đại đoàn kết dân tộc là một mục tiêu, nhiệm vụ hàng đầu của cách mạng Việt Nam và đồng thời cách mạng là sự nghiệp của ai?(NHUNG HOÀNG)",
+    "question": "Theo quan điểm của Hồ Chí Minh, đại đoàn kết dân tộc là một mục tiêu, nhiệm vụ hàng đầu của cách mạng Việt Nam và đồng thời cách mạng là sự nghiệp của ai?",
     "options": {
       "A": "Của quần chúng, do quần chúng và vì quần chúng",
       "B": "Của dân, do dân và vì dân",
@@ -1133,7 +1133,7 @@ const allQuestionsVerified = [
     "explanation": "Nhân dân là người thực hiện và thụ hưởng cách mạng; Đảng có nhiệm vụ tập hợp, hướng dẫn quần chúng thành lực lượng đoàn kết có tổ chức.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 99."
   },
   {
-    "question": "\"Đến ngày thắng lợi, nhân dân ta sẽ xây dựng lại đất nước ta đàng hoàng hơn, to đẹp hơn!”. Điều khẳng định trên được Hồ Chí Minh nêu ra tại văn kiện nào sau đây?(NHUNG HOÀNG)",
+    "question": "\"Đến ngày thắng lợi, nhân dân ta sẽ xây dựng lại đất nước ta đàng hoàng hơn, to đẹp hơn!”. Điều khẳng định trên được Hồ Chí Minh nêu ra tại văn kiện nào sau đây?",
     "options": {
       "A": "Lời kêu gọi toàn quốc kháng chiến",
       "B": "Bài phát biểu tại lễ kỷ niệm 30 năm thành lập Đảng",
@@ -1199,7 +1199,7 @@ const allQuestionsVerified = [
     "explanation": "Sự xâm lược và khai thác của Pháp áp đặt ách thuộc địa đồng thời duy trì quan hệ phong kiến; điều kiện đó quy định nhiệm vụ giải phóng dân tộc.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 19-20."
   },
   {
-    "question": "Theo Hồ Chí Minh, biện pháp nào quan trọng nhất trong xây dựng chủ nghĩa xã hội?(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, biện pháp nào quan trọng nhất trong xây dựng chủ nghĩa xã hội?",
     "options": {
       "A": "Tranh thủ tối đa sự giúp đỡ, viện trợ quốc tế",
       "B": "Kết hợp cải tạo xã hội cũ và xây dựng xã hội mới",
@@ -1210,7 +1210,7 @@ const allQuestionsVerified = [
     "explanation": "Nhân dân là lực lượng quyết định xây dựng chủ nghĩa xã hội; phát huy lợi ích, quyền làm chủ và sức đoàn kết của dân giúp huy động nội lực.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 57,59-60.\nGhi chú trong tài liệu: (Kiểu hỏi khác: Theo Hồ Chí Minh, cách làm trong xây dựng xã hội mới là: A. Tranh thủ tối đa sự giúp đỡ, viện trợ quốc tế B. Đem của dân, tài dân, sức dân làm lợi cho dân C. Kết hợp cải tạo xã hội cũ với xây dựng xã hội mới D. Kết hợp xây dựng và bảo vệ đất nước)"
   },
   {
-    "question": "Chọn câu trả lời đúng nhất với tư tưởng Hồ Chí Minh về vai trò của đại đoàn kết dân tộc: (NHUNG HOÀNG)",
+    "question": "Chọn câu trả lời đúng nhất với tư tưởng Hồ Chí Minh về vai trò của đại đoàn kết dân tộc:",
     "options": {
       "A": "Đại đoàn kết dân tộc là vấn đề chiến lược",
       "B": "Đại đoàn kết dân tộc là vấn đề sách lược",
@@ -1276,7 +1276,7 @@ const allQuestionsVerified = [
     "explanation": "Nền tảng công-nông-trí vững giúp mở rộng Mặt trận; tập hợp rộng rãi lại tăng sức mạnh liên minh. Hai yêu cầu hỗ trợ nhau, không loại trừ nhau.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 100,103."
   },
   {
-    "question": "Vấn đề dân tộc trong tư tưởng Hồ Chí Minh là sự kết hợp nhuần nhuyễn:(NHUNG HOÀNG)",
+    "question": "Vấn đề dân tộc trong tư tưởng Hồ Chí Minh là sự kết hợp nhuần nhuyễn:",
     "options": {
       "A": "Dân tộc với giai cấp.",
       "B": "Độc lập dân tộc và chủ nghĩa xã hội.",
@@ -1474,7 +1474,7 @@ const allQuestionsVerified = [
     "explanation": "Định nghĩa Đại hội XI xác định tư tưởng Hồ Chí Minh là kết quả vận dụng, phát triển sáng tạo chủ nghĩa Mác-Lênin vào hoàn cảnh cụ thể Việt Nam.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 5."
   },
   {
-    "question": "Phương thức tiếp cận về chủ nghĩa xã hội của Hồ Chí Minh thiên về hướng nào dưới đây? (NHUNG HOÀNG)",
+    "question": "Phương thức tiếp cận về chủ nghĩa xã hội của Hồ Chí Minh thiên về hướng nào dưới đây?",
     "options": {
       "A": "Hồ Chí Minh tiếp cận chủ nghĩa xã hội từ phương diện kinh tế là chủ yếu",
       "B": "Hồ Chí Minh tiếp cận chủ nghĩa xã hội từ phương diện văn hóa là chủ yếu",
@@ -1540,7 +1540,7 @@ const allQuestionsVerified = [
     "explanation": "Dân lập nên nhà nước, thực hiện quyền và nghĩa vụ làm chủ, tham gia xây dựng và bảo vệ bộ máy; các nội dung A, B, C bổ sung nhau nên chọn tất cả.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 85-86."
   },
   {
-    "question": "Hồ Chí Minh lưu ý xây dựng nhà nước có hiệu lực pháp lý mạnh mẽ phải(NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh lưu ý xây dựng nhà nước có hiệu lực pháp lý mạnh mẽ phải",
     "options": {
       "A": "Xây dựng đội ngũ cán bộ, công chức đủ đức, tài",
       "B": "Xây dựng đội ngũ cán bộ, công chức đủ phẩm chất.",
@@ -1606,7 +1606,7 @@ const allQuestionsVerified = [
     "explanation": "Nhà nước cần hiến pháp dân chủ, tổng tuyển cử và bộ máy được lập theo luật; hợp hiến, hợp pháp tạo cơ sở pháp lý cho hoạt động đối nội và đối ngoại.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 86-87."
   },
   {
-    "question": "Hòa bình là phương pháp cách mạng(NHUNG HOÀNG)",
+    "question": "Hòa bình là phương pháp cách mạng",
     "options": {
       "A": "Không hiệu quả",
       "B": "Rất nhân văn",
@@ -1749,7 +1749,7 @@ const allQuestionsVerified = [
     "explanation": "Thời thơ ấu hình thành lòng yêu nước; nhận thức đặc điểm thời đại và con đường vô sản được phát triển qua trải nghiệm quốc tế, học tập và hoạt động chính trị sau này.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 28-30."
   },
   {
-    "question": "Trong các quan điểm dưới đây, đâu là quan điểm của Hồ Chí Minh?(NHUNG HOÀNG)",
+    "question": "Trong các quan điểm dưới đây, đâu là quan điểm của Hồ Chí Minh?",
     "options": {
       "A": "Văn hóa ngang hàng với các lĩnh vực khác, có mỗi quan hệ với các lĩnh vực khác",
       "B": "Văn hóá không như lĩnh vực khác, có mỗi quan hệ với các lĩnh vực khác",
@@ -1947,7 +1947,7 @@ const allQuestionsVerified = [
     "explanation": "Phúc quyết là biểu hiện dân chủ trực tiếp: nhân dân quyết định vấn đề liên quan vận mệnh quốc gia, vì dân là chủ thể tối cao của quyền lực.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 83-85."
   },
   {
-    "question": "Theo Hồ Chí Minh, để lãnh đạo Mặt trận, Đảng phải đi đúng đường lối quần chúng, không được: (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, để lãnh đạo Mặt trận, Đảng phải đi đúng đường lối quần chúng, không được:",
     "options": {
       "A": "Vận động, giáo dục, thuyết phục, nêu gương, lấy lòng chân thành để đối xử, cảm hóa, khơi gợi tinh thần tự giác, tự nguyện.",
       "B": "Quan liêu, mệnh lệnh và gò ép.",
@@ -2002,7 +2002,7 @@ const allQuestionsVerified = [
     "explanation": "LƯU Ý KHI RÀ SOÁT: Phân biệt quyền tự do dân chủ với quyền bình đẳng trong câu dẫn. Yêu sách nêu cả các quyền tự do dân chủ và bình đẳng. Nếu hỏi rộng như hiện tại, lựa chọn A không loại trừ được D.\nYêu sách yêu cầu quyền pháp lý bình đẳng và các quyền tự do dân chủ, là bước đấu tranh quan trọng nhưng chưa đòi độc lập hoàn toàn.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 29,42-43."
   },
   {
-    "question": "Đâu là câu nói nổi tiếng của Hồ Chí Minh (NHUNG HOÀNG)",
+    "question": "Đâu là câu nói nổi tiếng của Hồ Chí Minh",
     "options": {
       "A": "Không có gì quý hơn độc lập tự do",
       "B": "Hạnh phúc là đấu tranh",
@@ -2167,7 +2167,7 @@ const allQuestionsVerified = [
     "explanation": "Đầy tớ trung thành nghĩa là tận tâm phục vụ lợi ích nhân dân; Đảng và cán bộ không có đặc quyền hay lợi ích riêng ngoài lợi ích dân tộc.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 77-78,86."
   },
   {
-    "question": "Theo Hồ Chí Minh, đường lối chính trị là: (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, đường lối chính trị là:",
     "options": {
       "A": "Một vấn đề cốt tử trong tồn tại và phát triển của Đảng.",
       "B": "Một vấn đề không quan trọng trong tồn tại và phát triển của Đảng.",
@@ -2244,7 +2244,7 @@ const allQuestionsVerified = [
     "explanation": "Làm chủ không chỉ là có địa vị mà còn phải có năng lực thực hiện quyền và trách nhiệm công dân; A và B cùng đúng nên chọn C.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 85-86.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Hồ Chí Minh cho rằng đạo đức cách mạng phải: (NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh cho rằng đạo đức cách mạng phải:",
     "options": {
       "A": "Tự mình tu dưỡng mà thành",
       "B": "Tự mình phấn đấu mà thành",
@@ -2321,7 +2321,7 @@ const allQuestionsVerified = [
     "explanation": "Liên minh công-nông-trí tạo nền tảng lực lượng; Đảng lãnh đạo giúp Mặt trận có đường lối đúng và mục tiêu độc lập gắn chủ nghĩa xã hội.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 103.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Sức mạnh dân tộc trong tư tưởng Hồ Chí Minh bao gồm: (NHUNG HOÀNG)",
+    "question": "Sức mạnh dân tộc trong tư tưởng Hồ Chí Minh bao gồm:",
     "options": {
       "A": "Chủ nghĩa yêu nước và văn hóa truyền thống Việt Nam.",
       "B": "Tinh thần đoàn kết, ý thức đấu tranh cho độc lập, tự do.",
@@ -2398,7 +2398,7 @@ const allQuestionsVerified = [
     "explanation": "Uy tín quá khứ không bảo đảm phẩm chất mãi mãi; sa vào chủ nghĩa cá nhân làm mất trong sáng và lòng tin, nên phải tu dưỡng suốt đời.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 75,136.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Tìm ra luận điểm sai trong tư tưởng Hồ Chí Minh khi Người lưu ý tiếp nhận và vận dụng chủ nghĩa Mác - Lênin: (NHUNG HOÀNG)",
+    "question": "Tìm ra luận điểm sai trong tư tưởng Hồ Chí Minh khi Người lưu ý tiếp nhận và vận dụng chủ nghĩa Mác - Lênin:",
     "options": {
       "A": "Một là, việc học tập, nghiên cứu, tuyên truyền chủ nghĩa Mác - Lênin phải luôn phù hợp với từng đối tượng.",
       "B": "Hai là, việc vận dụng chủ nghĩa Mác - Lênin phải luôn luôn kiên định trong mọi hoàn cảnh.",
@@ -2464,7 +2464,7 @@ const allQuestionsVerified = [
     "explanation": "Người lãnh đạo phải thực hành trước, lời nói thống nhất việc làm; nêu gương tạo niềm tin và giáo dục dân bằng hành động cụ thể.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 132-133."
   },
   {
-    "question": "Hồ Chí Minh cho rằng cán bộ, đảng viên phải lưu ý cái gì có lợi cho dân dù nhỏ đến mấy cũng phải: (NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh cho rằng cán bộ, đảng viên phải lưu ý cái gì có lợi cho dân dù nhỏ đến mấy cũng phải:",
     "options": {
       "A": "Cố mà làm",
       "B": "Phấn đấu",
@@ -2530,7 +2530,7 @@ const allQuestionsVerified = [
     "explanation": "Văn hóa nằm trong chính trị và kinh tế, phục vụ nhiệm vụ chính trị và tác động tích cực tới kinh tế; không chỉ thụ động chịu tác động từ hai lĩnh vực ấy.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 119.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Đối với một quốc gia: cần, kiệm, liêm, chính là thước đo sự giàu có về vật chất, vững mạnh về tinh thần, thể hiện: (NHUNG HOÀNG)",
+    "question": "Đối với một quốc gia: cần, kiệm, liêm, chính là thước đo sự giàu có về vật chất, vững mạnh về tinh thần, thể hiện:",
     "options": {
       "A": "Sự văn minh tiến bộ.",
       "B": "Văn hóa cao",
@@ -2552,7 +2552,7 @@ const allQuestionsVerified = [
     "explanation": "Theo nghĩa hẹp, văn hóa là đời sống tinh thần, thuộc kiến trúc thượng tầng; theo nghĩa rộng, văn hóa còn bao gồm toàn bộ sáng tạo và phương thức sinh hoạt.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 118-119.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Yêu thương con người được Hồ Chí Minh xác định là một trong những phẩm chất đạo đức cao đẹp nhất. Người nói, người cách mạng là người giàu tình cảm, có tình cảm cách mạng: (NHUNG HOÀNG)",
+    "question": "Yêu thương con người được Hồ Chí Minh xác định là một trong những phẩm chất đạo đức cao đẹp nhất. Người nói, người cách mạng là người giàu tình cảm, có tình cảm cách mạng:",
     "options": {
       "A": "mới đi làm cách mạng.",
       "B": "mới yêu thương con người.",
@@ -2651,7 +2651,7 @@ const allQuestionsVerified = [
     "explanation": "Nhà nước nhận quyền do dân giao nên phải chịu dân giám sát; liên hệ, lắng nghe và kiểm soát ngăn lạm quyền, bảo đảm bộ máy phục vụ đúng lợi ích dân.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 90-91."
   },
   {
-    "question": "Hồ Chí Minh cho rằng:(NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh cho rằng:",
     "options": {
       "A": "Vấn đề dân tộc và vấn đề giai cấp là quan hệ chính trị",
       "B": "Vấn đề dân tộc và vấn đề giai cấp là quan hệ kinh tề",
@@ -2728,7 +2728,7 @@ const allQuestionsVerified = [
     "explanation": "Xóa mù chữ và phát triển giáo dục nâng hiểu biết, dân trí, đào tạo con người và nguồn nhân lực; giáo dục phục vụ khả năng làm chủ và tiến bộ xã hội.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 118,122."
   },
   {
-    "question": "Theo quan điểm của Hồ Chí Minh, tố chức nào sau đây có nhiệm vụ thực hiện sự khối đại đoàn kết toàn dân tộc?(NHUNG HOÀNG)",
+    "question": "Theo quan điểm của Hồ Chí Minh, tố chức nào sau đây có nhiệm vụ thực hiện sự khối đại đoàn kết toàn dân tộc?",
     "options": {
       "A": "Mặt trận dân tộc thống nhất",
       "B": "Mặt trận dân chủ",
@@ -2739,7 +2739,7 @@ const allQuestionsVerified = [
     "explanation": "Mặt trận tập hợp tổ chức, cá nhân yêu nước thành lực lượng chung, thực hiện đại đoàn kết rộng rãi trên nền tảng và mục tiêu thống nhất.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 102-103."
   },
   {
-    "question": "Chủ trương cầu ngoại viện, dùng bạo lực để khôi phục độc lập dân tộc là đường lối của nhà yêu nước nào?(NHUNG HOÀNG)",
+    "question": "Chủ trương cầu ngoại viện, dùng bạo lực để khôi phục độc lập dân tộc là đường lối của nhà yêu nước nào?",
     "options": {
       "A": "Phan Bội Châu",
       "B": "Phan Chu Trinh",
@@ -2750,7 +2750,7 @@ const allQuestionsVerified = [
     "explanation": "Phan Bội Châu theo khuynh hướng dựa ngoại viện để chống Pháp; Hồ Chí Minh khâm phục lòng yêu nước nhưng tìm con đường khác. PDF chưa triển khai đầy đủ câu chữ bạo lực và ngoại viện của lựa chọn.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 19-20,29."
   },
   {
-    "question": "Hồ Chí Minh cho rằng đoàn kết có ý nghĩa thế nào?(NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh cho rằng đoàn kết có ý nghĩa thế nào?",
     "options": {
       "A": "Đoàn kết là yêu nước",
       "B": "Đoàn kết là sáng tạo",
@@ -2761,7 +2761,7 @@ const allQuestionsVerified = [
     "explanation": "Đoàn kết tạo lực lượng có khả năng vượt khó và thắng lợi; giáo trình khái quát vai trò đó bằng luận điểm đoàn kết là sức mạnh.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 98-99."
   },
   {
-    "question": "Vì sao Hồ Chí Minh lại khẳng định: đại đoàn kết toàn dân tộc phải được xác định là nhiệm vụ hàng đầu của Đảng?(NHUNG HOÀNG)",
+    "question": "Vì sao Hồ Chí Minh lại khẳng định: đại đoàn kết toàn dân tộc phải được xác định là nhiệm vụ hàng đầu của Đảng?",
     "options": {
       "A": "Vì đại đoàn kết toàn dân tộc không chi là khẩu hiệu chiến lược, mà còn là mục đích của cách mạng cần phải được quán triệt trong tất cả mọi lĩnh vực, từ đường lối, chủ trương, chính sách tới hoạt động thực tiễn của Đảng",
       "B": "Vì Đảng là lực lượng vận động, thuyết phục và hướng dẫn quần chúng nhân dân",
@@ -2839,7 +2839,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM TRA CÂU HỎI: Bốn lựa chọn ăn, mặc, ở, học đều phù hợp yêu cầu chăm lo con người nên E tổng hợp đúng về nội dung. Nhưng chúng không trực tiếp trả lời tiêu đề xác lập quyền lực; phần thân câu hỏi có thể bị nhầm hoặc thiếu.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 137."
   },
   {
-    "question": "Theo Hồ Chí Minh, \"Muốn xây dựng chủ nghĩa xã hội, trước hết cần có (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, \"Muốn xây dựng chủ nghĩa xã hội, trước hết cần có",
     "options": {
       "A": "con người xã hội chủ nghĩa\"",
       "B": "khoa học xã hội tiên tiến\"",
@@ -2927,7 +2927,7 @@ const allQuestionsVerified = [
     "explanation": "Lý luận chỉ có ý nghĩa khi định hướng và được kiểm nghiệm bằng thực tiễn; không vận dụng vào công việc sẽ trở thành lý luận suông.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 11-12."
   },
   {
-    "question": "Một trong những giá trị của văn hoá phương Tây được Hồ Chí Minh tiếp thu để hình thành tư tưởng của mình là:(NHUNG HOÀNG)",
+    "question": "Một trong những giá trị của văn hoá phương Tây được Hồ Chí Minh tiếp thu để hình thành tư tưởng của mình là:",
     "options": {
       "A": "Tư tưởng văn hoá dân chủ và cách mạng của cách mạng Pháp và cách mạng Mỹ",
       "B": "Những mặt tích cực của Nho Giáo",
@@ -2949,7 +2949,7 @@ const allQuestionsVerified = [
     "explanation": "Chủ nghĩa yêu nước là giá trị truyền thống nổi bật, nuôi dưỡng ý chí cứu nước và trở thành động lực để Người tìm đường giải phóng dân tộc.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 22."
   },
   {
-    "question": "Hồ Chí Minh vạch ra mục tiêu của cách mạng giải phóng dân tộc thuộc địa là gì?(NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh vạch ra mục tiêu của cách mạng giải phóng dân tộc thuộc địa là gì?",
     "options": {
       "A": "Đánh đổ ách thống trị của chủ nghĩa thực dân, giành độc lập dân tộc và thiết lập chính quyền của nhân dân",
       "B": "Đánh đổ ách thống trị của chủ nghĩa thực dân, giành độc lập dân tộc và thiết lập chính quyền về tay người lao động",
@@ -3004,7 +3004,7 @@ const allQuestionsVerified = [
     "explanation": "Giáo trình dẫn trực tiếp Đường cách mệnh năm 1927 khi giải thích sự cần thiết của Đảng và ví Đảng với người cầm lái.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 71."
   },
   {
-    "question": "Luận điểm: \"Cách mệnh An Nam cũng là một bộ phận trong cách mệng thế giới. Ai làm cách mệnh trong thế giới đều là đồng chí của dân An Nam cả\" được trích từ tác phẩm nào của Hồ Chí Minh?(NHUNG HOÀNG)",
+    "question": "Luận điểm: \"Cách mệnh An Nam cũng là một bộ phận trong cách mệng thế giới. Ai làm cách mệnh trong thế giới đều là đồng chí của dân An Nam cả\" được trích từ tác phẩm nào của Hồ Chí Minh?",
     "options": {
       "A": "Đông Dương (1923-1924)",
       "B": "Bản án chế dộ thực dân Pháp",
@@ -3015,7 +3015,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM CHỨNG: Nội dung cách mạng Việt Nam gắn cách mạng thế giới phù hợp; cần nguyên văn tác phẩm để xác nhận xuất xứ của câu trích.\nĐường cách mệnh trình bày cách mạng Việt Nam gắn với cách mạng thế giới và tinh thần đoàn kết quốc tế. Giáo trình xác nhận nội dung, nhưng chưa chép nguyên văn câu trích đầy đủ ở đây.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 31,106-107."
   },
   {
-    "question": "Chọn phương án trả lời đúng nhất?(NHUNG HOÀNG)",
+    "question": "Chọn phương án trả lời đúng nhất?",
     "options": {
       "A": "Chủ nghĩa Mác - Lênin là nền tảng tư tưởng, kim chỉ nam cho hành động của Đảng",
       "B": "Tư tưởng Hồ Chí Minh là nền tảng tư tưởng, kim chỉ nam cho hành động của Đảng",
@@ -3125,7 +3125,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM CHỨNG NGUỒN TRÍCH: A bệnh mẹ phù hợp hình ảnh nói về chủ nghĩa cá nhân, nhưng nguồn tra cứu gắn hình ảnh này với Sửa đổi lối làm việc năm 1947. Chưa kiểm chứng được việc đề gắn nguyên văn đó riêng với bài báo năm 1969; không nên dùng một nguồn về năm 1947 để chứng nhận tên tác phẩm, thời gian trong đề.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 92, 135.\nNguồn bổ sung: Hồ Chí Minh.vn, Quan điểm của Chủ tịch Hồ Chí Minh về chủ nghĩa cá nhân, đấu tranh chống chủ nghĩa cá nhân: https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/nghien-cuu-tu-tuong-dao-duc-ho-chi-minh/quan-diem-cua-chu-tich-ho-chi-minh-ve-chu-nghia-ca-nhan-dau-tranh-chong-chu-nghia-ca-nhan-9743"
   },
   {
-    "question": "Hồ Chí Minh cho rằng giai cấp địa chủ ở Việt Nam(NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh cho rằng giai cấp địa chủ ở Việt Nam",
     "options": {
       "A": "Là giai cấp phản động",
       "B": "Là giai cấp tiên tiến",
@@ -3136,7 +3136,7 @@ const allQuestionsVerified = [
     "explanation": "LƯU Ý KHI RÀ SOÁT: Nêu trung/tiểu địa chủ chưa phản cách mạng. Không được mở rộng sách lược tranh thủ, trung lập hóa thành thái độ với mọi địa chủ; cần giữ điều kiện và phân hóa đối tượng.\nKhông đánh đồng mọi địa chủ: với trung, tiểu địa chủ chưa rõ phản cách mạng, có thể tranh thủ hoặc trung lập; phải phân biệt với lực lượng trực tiếp chống cách mạng.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 49.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Hồ chí minh cho rằng giai cấp địa chủ ở việt nam(NHUNG HOÀNG)",
+    "question": "Hồ chí minh cho rằng giai cấp địa chủ ở việt nam",
     "options": {
       "A": "Là giai Cấp phản động",
       "B": "Là giai cấp tiên tiến",
@@ -3257,7 +3257,7 @@ const allQuestionsVerified = [
     "explanation": "Văn hóa do con người sáng tạo để đáp ứng đời sống và sinh tồn; mục đích ấy bao gồm cả nhu cầu vật chất, tinh thần và thích ứng môi trường sống.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 118.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Mục đích của văn hóa theo Hồ Chí Minh đó là (NHUNG HOÀNG)",
+    "question": "Mục đích của văn hóa theo Hồ Chí Minh đó là",
     "options": {
       "A": "Vì lẽ sinh tồn và mục đích của cuộc sống",
       "B": "Vì cuộc sống sinh tồn của nhân dân",
@@ -3367,7 +3367,7 @@ const allQuestionsVerified = [
     "explanation": "Đạo đức tạo động cơ đúng, sức bền và niềm tin của dân; nhiệm vụ cách mạng khó khăn đòi hỏi nền tảng ấy để hoàn thành.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 124-125."
   },
   {
-    "question": "Hồ Chí Minh lưu ý(NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh lưu ý",
     "options": {
       "A": "Đảng cầm quyền, Đảng lãnh đạo để cho dân làm chủ",
       "B": "Đảng cầm quyền, Đảng lãnh đạo để cho dân quản lý",
@@ -3422,7 +3422,7 @@ const allQuestionsVerified = [
     "explanation": "Giấu khuyết điểm làm mất khả năng sửa chữa và tiến bộ; Đảng phải nhận lỗi, không sợ phê bình, tự chỉnh đốn để giữ uy tín và sức mạnh.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 80.\nGhi chú trong tài liệu: (Kiểu hỏi khác: Đâu là đáp án chính xác nhất về Đảng theo tư tưởng Hồ Chí Minh? A. Một Đảng mà giấu giếm khuyết điểm của mình là một đảng hỏng B. Một Đảng mà giấu giếm khuyết điểm của mình là một đảng cần phải xóa bỏ C. Một Đảng mà giấu giếm khuyết điểm của mình là một đảng cần phải thay thế D. Một Đảng mà giấu giếm khuyết điểm của mình là một đảng cần phải thay đổi)\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Trong thời gian ở nước ngoài, Nguyễn Tất Thành đã làm những công việc gì?(NHUNG HOÀNG)",
+    "question": "Trong thời gian ở nước ngoài, Nguyễn Tất Thành đã làm những công việc gì?",
     "options": {
       "A": "Đốt lò, bán báo",
       "B": "Thợ ảnh, làm bánh",
@@ -3565,7 +3565,7 @@ const allQuestionsVerified = [
     "explanation": "Chủ nghĩa cá nhân là nguyên nhân chủ quan sinh nhiều tiêu cực, làm cán bộ dùng quyền để tư lợi; vì vậy phải chống từ gốc cùng với hoàn thiện cơ chế.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 65,92."
   },
   {
-    "question": "Để có thể tận dụng thời cơ, vượt qua thách thức, trên cơ sở nhận thức và vận dụng sáng tạo tư tưởng Hồ Chí Minh, cần tập trung vào vấn đề nào?(NHUNG HOÀNG)",
+    "question": "Để có thể tận dụng thời cơ, vượt qua thách thức, trên cơ sở nhận thức và vận dụng sáng tạo tư tưởng Hồ Chí Minh, cần tập trung vào vấn đề nào?",
     "options": {
       "A": "Kiên định phương pháp cách mạng",
       "B": "Kiên định cách mạng",
@@ -3576,7 +3576,7 @@ const allQuestionsVerified = [
     "explanation": "Vận dụng sáng tạo trong hoàn cảnh mới vẫn phải kiên định nền tảng và mục tiêu; không dao động về lý tưởng cũng không sao chép cách làm cũ.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 8-9,67-69."
   },
   {
-    "question": "Hồ Chí Minh cho rằng(NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh cho rằng",
     "options": {
       "A": "Văn hoá là tổng hợp của mọi phương thức sinh hoạt cùng với biểu hiện của nó mà loài người đã sản sinh ra nhằm thích ứng những nhu cầu đời sống và đòi hỏi của sự sinh tồn",
       "B": "Văn hoá là tổng hợp của mọi phương thức sinh hoạt cùng với biểu hiện của nó mà loài người đã sản sinh ra nhằm thích ứng những nhu cầu đời sống và đòi hỏi của sự sống còn",
@@ -3730,7 +3730,7 @@ const allQuestionsVerified = [
     "explanation": "Giáo trình gắn khẩu hiệu Tự do-Bình đẳng-Bác ái với Đại Cách mạng Pháp năm 1789; Người quan tâm tìm hiểu từ thời học tiểu học.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 24."
   },
   {
-    "question": "Theo Hồ Chí Minh, Đảng Cộng sản Việt Nam mang bản chất gì?(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, Đảng Cộng sản Việt Nam mang bản chất gì?",
     "options": {
       "A": "Mang bản chất giai cấp công nhân, dân tộc",
       "B": "Mang bản chất giai cấp công nhân, nhân dân lao động và dân tộc",
@@ -3741,7 +3741,7 @@ const allQuestionsVerified = [
     "explanation": "Bản chất công nhân thể hiện qua nền tảng Mác-Lênin, mục tiêu và nguyên tắc của Đảng; thống nhất với vai trò đại diện nhân dân và dân tộc.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 72,75."
   },
   {
-    "question": "Tìm phương án sai(NHUNG HOÀNG) Khái niệm tư tưởng Hồ Chí Minh mà Đại hội IX (2001) nêu lên bao gồm:",
+    "question": "Tìm phương án sai Khái niệm tư tưởng Hồ Chí Minh mà Đại hội IX (2001) nêu lên bao gồm:",
     "options": {
       "A": "Bản chất cách mạng và khoa học của tư tưởng Hồ Chí Minh",
       "B": "Nguồn gốc tư tưởng, lý luận của tư tưởng Hồ Chí Minh",
@@ -3752,7 +3752,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM CHỨNG: Đề hỏi khái niệm tại Đại hội IX; giáo trình đang trình bày khái niệm Đại hội XI. Cần văn kiện đúng kỳ đại hội.\nKhái niệm nêu bản chất, nội dung, nguồn gốc và giá trị của tư tưởng; không trình bày một kết cấu chi tiết của toàn bộ hệ thống, nên D không thuộc cách khái quát ấy.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 5-8."
   },
   {
-    "question": "Theo Hồ Chí Minh, xây dựng khối đại đoàn kết toàn dân để tập hợp lực lượng, không được phép bỏ sót một lực lượng nào miễn không là Việt gian, không phản bội lại quyền lợi của dân chúng phải:(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, xây dựng khối đại đoàn kết toàn dân để tập hợp lực lượng, không được phép bỏ sót một lực lượng nào miễn không là Việt gian, không phản bội lại quyền lợi của dân chúng phải:",
     "options": {
       "A": "Đứng vững trên lập trường nhân dân lao động, giải quyết hài hoà mối quan hệ giai cấp - dân tộc.",
       "B": "Đứng vững trên lập trường giai cấp nông dân, giải quyết hài hoà mối quan hệ giai cấp - dân tộc.",
@@ -3862,7 +3862,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM CHỨNG: Cần nguyên văn câu nhận xét về Pháp và Nhật.\nPháp và Nhật đều là lực lượng thống trị, xâm lược cần chống; giáo trình trình bày sự thay đổi đối tượng trực tiếp theo hoàn cảnh nhưng không dẫn nguyên văn câu chẳng khác gì nhau.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 19-22,33-34.\nGhi chú trong tài liệu: (Khi so sánh vẽ bản chất của Nhật và Pháp, Hồ chí Minh nhận định như thế nào? A. Chẳng khác gì nhau B. Khác nhau C. Rất đặc biệt D. Giống nhau)\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Nguyễn Ái Quốc gửi bản \"Bản yêu sách của nhân dân An Nam\" tới Hội nghị Vécxây, đòi chính phủ Pháp thừa nhận các quyền tự do, dân chủ và bình đẳng của nhân dân Việt Nam vào thời gian nào?(NHUNG HOÀNG)",
+    "question": "Nguyễn Ái Quốc gửi bản \"Bản yêu sách của nhân dân An Nam\" tới Hội nghị Vécxây, đòi chính phủ Pháp thừa nhận các quyền tự do, dân chủ và bình đẳng của nhân dân Việt Nam vào thời gian nào?",
     "options": {
       "A": "6/1917",
       "B": "6/1918",
@@ -3873,7 +3873,7 @@ const allQuestionsVerified = [
     "explanation": "Bản Yêu sách của nhân dân An Nam gửi ngày 18/6/1919 tới Hội nghị Vécxây; vì vậy tháng 6/1919 là mốc đúng.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 29,42."
   },
   {
-    "question": "Theo Hồ Chí Minh, trong Nhà nước vì dân, từ Chủ tịch nước đến công chức bình thường đều phải làm công bộc, làm đầy tớ cho nhân dân chứ không phải làm: (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, trong Nhà nước vì dân, từ Chủ tịch nước đến công chức bình thường đều phải làm công bộc, làm đầy tớ cho nhân dân chứ không phải làm:",
     "options": {
       "A": "Tướng",
       "B": "Quan",
@@ -3950,7 +3950,7 @@ const allQuestionsVerified = [
     "explanation": "Nhóm đức tính này gắn hành vi hằng ngày: lao động, tiết kiệm, trong sạch, ngay thẳng và công tâm; thực hành chúng hướng công việc về lợi ích chung.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 128-130."
   },
   {
-    "question": "Nội dung nào không đúng về giá trị lý luận và thực tiễn của Tư tưởng Hồ Chí Minh về vấn đề dân tộc và cách mạng giải phóng dân tộc: (NHUNG HOÀNG)",
+    "question": "Nội dung nào không đúng về giá trị lý luận và thực tiễn của Tư tưởng Hồ Chí Minh về vấn đề dân tộc và cách mạng giải phóng dân tộc:",
     "options": {
       "A": "Làm phong phú học thuyết Mác-Lênin về cách mạng thuộc địa.",
       "B": "Soi đường thắng lợi cho cách mạng giải phóng dân tộc ở Việt Nam",
@@ -3961,7 +3961,7 @@ const allQuestionsVerified = [
     "explanation": "ĐÁP ÁN CHUẨN HƠN: Chưa xác định được lựa chọn sai rõ ràng; không có căn cứ coi D sai chỉ vì nói đến thắng lợi Cách mạng Tháng Tám.\nGiáo trình cho thấy tư tưởng, đường lối được vận dụng vào phong trào dẫn tới thắng lợi năm 1945. D có thể hẹp hơn các giá trị tổng quát khác, nhưng hẹp không đồng nghĩa sai. Câu hỏi phủ định hiện chưa tạo được một phương án sai duy nhất.\nĐáp án trong trường answer vẫn giữ nguyên source Quizlet: D.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 33–34, 36–37."
   },
   {
-    "question": "Theo Hồ Chí Minh, mục tiêu của chủ nghĩa xã hội gồm những nội dung nào sau đây?(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, mục tiêu của chủ nghĩa xã hội gồm những nội dung nào sau đây?",
     "options": {
       "A": "Chính trị, kinh tế, văn hóa xã hội và dân chủ",
       "B": "Chính trị, dân chủ, kinh tế, tiến bộ",
@@ -4137,7 +4137,7 @@ const allQuestionsVerified = [
     "explanation": "Chống tiêu cực cần pháp luật nghiêm minh và giáo dục đạo đức; chỉ giáo dục thiếu chế tài hoặc chỉ trừng phạt thiếu tu dưỡng đều chưa đủ.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 89-93."
   },
   {
-    "question": "Luận điểm \"Công cuộc giải phóng anh em chỉ có thể thực hiện được bằng sự nỗ lực của bản thân anh em\" là của:(NHUNG HOÀNG)",
+    "question": "Luận điểm \"Công cuộc giải phóng anh em chỉ có thể thực hiện được bằng sự nỗ lực của bản thân anh em\" là của:",
     "options": {
       "A": "C. Mắc",
       "B": "Ph. Ăngghen",
@@ -4148,7 +4148,7 @@ const allQuestionsVerified = [
     "explanation": "Giáo trình dẫn lời kêu gọi người bị áp bức tự nỗ lực giải phóng, nhấn mạnh tính chủ động và tự lực của cách mạng thuộc địa.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 51."
   },
   {
-    "question": "Trong những nhiệm vụ cấp bách của Nhà nước Việt Nam Dân chủ cộng hòa, khi nói về vấn đề thứ hai - nạn dốt, Hồ Chí Minh đã đề nghị mở một chiến dịch gì? Chọn phương án chính xác nhất(NHUNG HOÀNG)",
+    "question": "Trong những nhiệm vụ cấp bách của Nhà nước Việt Nam Dân chủ cộng hòa, khi nói về vấn đề thứ hai - nạn dốt, Hồ Chí Minh đã đề nghị mở một chiến dịch gì? Chọn phương án chính xác nhất",
     "options": {
       "A": "Một chiến dịch xây dựng đời sống mới",
       "B": "Một chiến dịch để chống nạn mù chữ",
@@ -4522,7 +4522,7 @@ const allQuestionsVerified = [
     "explanation": "Mục tiêu chung và lợi ích chung là điểm quy tụ những lực lượng có hoàn cảnh, tôn giáo, quan điểm khác nhau. Mặt trận phải thống nhất trên cơ sở ấy, đồng thời tôn trọng những lợi ích riêng chính đáng.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 101,103.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Hồ Chí Minh cho rằng đoàn kết toàn dân để: (NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh cho rằng đoàn kết toàn dân để:",
     "options": {
       "A": "Phụng sự nhân dân",
       "B": "Phụng sự cách mạng",
@@ -4786,7 +4786,7 @@ const allQuestionsVerified = [
     "explanation": "Luận điểm ba yếu tố giải thích nguồn gốc và quy luật ra đời của Đảng Cộng sản Việt Nam. Việc bổ sung phong trào yêu nước thể hiện sự vận dụng lý luận về đảng cộng sản vào hoàn cảnh một nước thuộc địa.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 72."
   },
   {
-    "question": "Hồ Chí Minh ví tham nhũng như giặc(NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh ví tham nhũng như giặc",
     "options": {
       "A": "Ngoại xâm",
       "B": "Mỹ",
@@ -4797,7 +4797,7 @@ const allQuestionsVerified = [
     "explanation": "Tham ô, lãng phí, quan liêu bị ví là giặc nội xâm vì phá hoại bộ máy và lòng tin từ bên trong. Chúng làm suy yếu cách mạng ngay trong đội ngũ, nên phải phòng ngừa và xử lý nghiêm.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 91-92.\nGhi chú trong tài liệu: (Kiểu hỏi khác: Theo Hồ Chí Minh, tham ô, lãng phí được ví như giặc gì? A. Ngoại xâm B. Nội xâm C. Mỹ D. Giặc dốt)\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Theo Hồ Chí Minh, cách mạng XHCN phải tiến hành đồng thời với cách mạng nào?(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, cách mạng XHCN phải tiến hành đồng thời với cách mạng nào?",
     "options": {
       "A": "Cách mạng tư sản",
       "B": "Cách mạng dân tộc dân chủ nhân dân",
@@ -4907,7 +4907,7 @@ const allQuestionsVerified = [
     "explanation": "Việt Nam có điểm xuất phát kinh tế, xã hội riêng, nên phải lựa chọn bước đi phù hợp và làm chắc từng bước. Học tập nước khác cần có chọn lọc, không nóng vội hoặc sao chép một mô hình sẵn có.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 62-64."
   },
   {
-    "question": "Theo Hồ Chí Minh, nhân dân lao động làm chủ Nhà nước thì dẫn đến một hệ quả là nhân dân có quyền: (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, nhân dân lao động làm chủ Nhà nước thì dẫn đến một hệ quả là nhân dân có quyền:",
     "options": {
       "A": "Không chịu sự kiểm soát của Nhà nước",
       "B": "Kiểm soát Nhà nước",
@@ -4918,7 +4918,7 @@ const allQuestionsVerified = [
     "explanation": "Quyền lực của Nhà nước do nhân dân trao, nên người dân có quyền giám sát và kiểm soát việc thực hiện quyền lực. Cán bộ phải chịu trách nhiệm trước dân, không được xem quyền được giao là đặc quyền riêng.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 84,90-91."
   },
   {
-    "question": "Theo Hồ Chí Minh, một trong những đặc điểm của Nhà nước pháp quyền là(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, một trong những đặc điểm của Nhà nước pháp quyền là",
     "options": {
       "A": "Nguyên tắc cơ bản của Nhà nước là hiệp thương dân chủ",
       "B": "Nhà nước lãnh đạo nhân dân thực hiện các nhiệm vụ cách mạng",
@@ -5017,7 +5017,7 @@ const allQuestionsVerified = [
     "explanation": "Đảng Cộng sản lãnh đạo việc xác định mục tiêu, đường lối và tổ chức lực lượng cách mạng. Nhờ đó, lòng yêu nước của quần chúng được chuyển thành phong trào có phương hướng và sức mạnh thống nhất.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 48."
   },
   {
-    "question": "Theo Hồ Chí Minh, phải kiên quyết khắc phục kịp thời các phản động lực trong con người và tổ chức. Đó là:(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, phải kiên quyết khắc phục kịp thời các phản động lực trong con người và tổ chức. Đó là:",
     "options": {
       "A": "Chủ nghĩa cá nhân.",
       "B": "Chủ nghĩa vị kỷ",
@@ -5127,7 +5127,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM CHỨNG: Cần nguyên văn phát biểu về việc không tự nhận là nhà thơ.\nGiáo trình bàn về quan niệm văn hóa và vai trò người nghệ sĩ, nhưng không đưa căn cứ trực tiếp cho câu hỏi Hồ Chí Minh tự nhận hay không tự nhận là nhà thơ. Vì vậy, B được giữ theo bộ câu hỏi gốc; không suy ra nhận định về cách Người tự gọi mình chỉ từ việc Người có sáng tác thơ.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 118,121-123."
   },
   {
-    "question": "Nguồn gốc nào sau đây quyết định tư tưởng Hồ Chí Minh: (NHUNG HOÀNG)",
+    "question": "Nguồn gốc nào sau đây quyết định tư tưởng Hồ Chí Minh:",
     "options": {
       "A": "Tư tưởng Tam dân của Tôn Trung Sơn",
       "B": "Tư tưởng của Khổng tử",
@@ -5138,7 +5138,7 @@ const allQuestionsVerified = [
     "explanation": "Chủ nghĩa Mác - Lênin cung cấp thế giới quan, phương pháp luận và con đường cách mạng vô sản cho Hồ Chí Minh. Giáo trình xác định đây là nguồn lý luận quyết định bước phát triển về chất của tư tưởng Người.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 25-26."
   },
   {
-    "question": "Người thầy giáo đầu tiên của Hồ Chí Minh là ai? (NHUNG HOÀNG)",
+    "question": "Người thầy giáo đầu tiên của Hồ Chí Minh là ai?",
     "options": {
       "A": "Vương Thúc Quý",
       "B": "Phan Bội Châu",
@@ -5182,7 +5182,7 @@ const allQuestionsVerified = [
     "explanation": "Sự chuyển sang chủ nghĩa đế quốc làm tăng xâm chiếm thuộc địa và mâu thuẫn giữa các dân tộc bị áp bức với đế quốc. Bối cảnh ấy, cùng Cách mạng Tháng Mười, tạo điều kiện lịch sử cho Hồ Chí Minh tìm con đường giải phóng mới.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 21-22."
   },
   {
-    "question": "Một trong những quan điểm cơ bản nghiên cứu tư tưởng Hồ Chí Minh là: (NHUNG HOÀNG)",
+    "question": "Một trong những quan điểm cơ bản nghiên cứu tư tưởng Hồ Chí Minh là:",
     "options": {
       "A": "Quan điểm đồng nhất",
       "B": "Quan điểm lịch sử cụ thể",
@@ -5259,7 +5259,7 @@ const allQuestionsVerified = [
     "explanation": "Cách mạng giải phóng dân tộc phải xóa ách thống trị của thực dân và các lực lượng tay sai cản trở độc lập. Việc xác định đối tượng đấu tranh dựa vào mâu thuẫn dân tộc chủ yếu, không đồng nhất mọi người có tài sản với kẻ thù.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 43,46-47."
   },
   {
-    "question": "Theo Hồ Chí Minh, giải quyết vấn đề dân tộc luôn gắn với vấn đề : (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, giải quyết vấn đề dân tộc luôn gắn với vấn đề :",
     "options": {
       "A": "Xã hội",
       "B": "Người lao động",
@@ -5270,7 +5270,7 @@ const allQuestionsVerified = [
     "explanation": "Hồ Chí Minh giải quyết vấn đề dân tộc từ lập trường giai cấp công nhân, gắn độc lập với chủ nghĩa xã hội. Tuy vậy, trong điều kiện thuộc địa phải ưu tiên giải phóng dân tộc, không máy móc đặt đấu tranh giai cấp lên trước.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 46-47,65-67."
   },
   {
-    "question": "Các luận điểm sau đây đều thể hiện tư tưởng dựa vào sức mình là chính. Luận điểm nào không phải của Hồ Chí Minh? (NHUNG HOÀNG)",
+    "question": "Các luận điểm sau đây đều thể hiện tư tưởng dựa vào sức mình là chính. Luận điểm nào không phải của Hồ Chí Minh?",
     "options": {
       "A": "Sự nghiệp giải phóng của giai cấp công nhân phải do bản thân giai cấp công nhân tự làm lấy.",
       "B": "Công cuộc giải phóng các dân tộc thuộc địa chỉ có thể thực hiện được bằng sự nỗ lực của bản thân các dân tộc đó.",
@@ -5314,7 +5314,7 @@ const allQuestionsVerified = [
     "explanation": "D phù hợp với giai đoạn hoạt động chủ yếu ở Xiêm năm 1928–1929. Niên biểu còn ghi việc Người trở lại Xiêm khoảng tháng 4-1930, nên không nên diễn giải D thành toàn bộ mọi lần có mặt tại Thái Lan.\nNguồn bổ sung: Hồ Chí Minh – Biên niên tiểu sử – Tập 2 (1930–9/1945): https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/book/ho-chi-minh/tieu-su-cuoc-doi-va-su-nghiep/ho-chi-minh-bien-nien-tieu-su-tap-2-1930-91945-22"
   },
   {
-    "question": "Hồ Chí Minh là người đấu tranh đòi quyền độc lập cho:(NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh là người đấu tranh đòi quyền độc lập cho:",
     "options": {
       "A": "Dân tộc Việt Nam .",
       "B": "Các dân tộc thuộc địa ở phương Đông.",
@@ -5369,7 +5369,7 @@ const allQuestionsVerified = [
     "explanation": "Đảng đảm nhiệm vai trò lãnh đạo; khối đại đoàn kết là lực lượng trong nước; các lực lượng cách mạng thế giới tạo sự phối hợp và hỗ trợ quốc tế. Các vai trò khác nhau cùng góp phần thực hiện mục tiêu giải phóng, nên chọn phương án tổng hợp.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 48-49,100,106-108."
   },
   {
-    "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc cần được tiến hành:(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc cần được tiến hành:",
     "options": {
       "A": "Chủ động, sáng tạo và có khả năng giành thắng lợi trước cách mạng vô sản ở chính quốc",
       "B": "Chủ động, sáng tạo và có khả năng giành thắng lợi trước cách mạng vô sản thế giới",
@@ -5512,7 +5512,7 @@ const allQuestionsVerified = [
     "explanation": "Không được lấy bước đi của nước khác làm khuôn bắt buộc cho Việt Nam. Hồ Chí Minh yêu cầu học kinh nghiệm có chọn lọc và xuất phát từ điều kiện lịch sử, kinh tế, xã hội của nước mình để xác định cách làm phù hợp.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 62-64.\nTài liệu không có lựa chọn C, D."
   },
   {
-    "question": "Theo Hồ Chí Minh, nội dung nào không đúng để phát huy động lực con người?(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, nội dung nào không đúng để phát huy động lực con người?",
     "options": {
       "A": "Phát huy sức mạnh đoàn kết của cả cộng đồng dân tộc",
       "B": "Phát huy sức mạnh của cá nhân con người",
@@ -5589,7 +5589,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM CHỨNG: Cần nguồn trực tiếp cho nhận định phù hợp với các dân tộc phương Đông.\nGiáo trình giải thích chủ nghĩa xã hội hướng tới giải phóng, ấm no và hạnh phúc, với con đường phát triển khác nhau tùy quốc gia. Tuy nhiên, nhận xét riêng rằng chủ nghĩa xã hội “phù hợp với các dân tộc phương Đông” chưa được dẫn trực tiếp; không nên hiểu mọi nước phương Đông đều có cùng hoàn cảnh hay mô hình.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 53-55.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Theo quan điểm của Hồ Chí Minh, đặc điểm của thời kỳ quá độ ở Việt Nam là gì?(NHUNG HOÀNG)",
+    "question": "Theo quan điểm của Hồ Chí Minh, đặc điểm của thời kỳ quá độ ở Việt Nam là gì?",
     "options": {
       "A": "Từ một nước nông nghiệp lạc hậu tiến thẳng lên chủ nghĩa xã hội, không qua giai đoạn phát triển tư bản chủ nghĩa",
       "B": "Từ một nước nông nghiệp lạc hậu tiến thẳng lên chủ nghĩa xã hội, không qua giai đoạn phát triển xã hội dân chủ",
@@ -5633,7 +5633,7 @@ const allQuestionsVerified = [
     "explanation": "ĐÁP ÁN CHUẨN HƠN: Không thể chọn A là nội dung không có; đề chưa cung cấp phương án phủ định đúng rõ ràng.\nTrang 53 nêu trực tiếp cách tiếp cận chủ nghĩa xã hội từ phương diện kinh tế cùng nhiều lĩnh vực khác. Do đó A là một cách tiếp cận có trong tư tưởng được trình bày ở giáo trình, trái với yêu cầu chọn nội dung không có.\nĐáp án trong trường answer vẫn giữ nguyên source Quizlet: A.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 53."
   },
   {
-    "question": "Quan điểm nào sau đây là tư cách Đảng viên theo tư tưởng Hồ Chí Minh?(NHUNG HOÀNG)",
+    "question": "Quan điểm nào sau đây là tư cách Đảng viên theo tư tưởng Hồ Chí Minh?",
     "options": {
       "A": "Đặt lợi ích của Đảng, của con người lên trên hết",
       "B": "Đặt lợi ích của Đảng, của nhân dân lên trên hết",
@@ -5809,7 +5809,7 @@ const allQuestionsVerified = [
     "explanation": "Tập trung dân chủ kết hợp quyền thảo luận, đóng góp ý kiến với sự thống nhất tổ chức và hành động. Dân chủ là cơ sở của tập trung, còn tập trung bảo đảm ý kiến chung được thực hiện hiệu quả.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 75."
   },
   {
-    "question": "Hồ Chí Minh nhận thức cán bộ là cái dây chuyền của bộ máy, là mắt khâu trung gian nối liền giữa: (NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh nhận thức cán bộ là cái dây chuyền của bộ máy, là mắt khâu trung gian nối liền giữa:",
     "options": {
       "A": "Nhà nước với nhân dân.",
       "B": "Đảng với dân.",
@@ -5820,7 +5820,7 @@ const allQuestionsVerified = [
     "explanation": "Cán bộ chuyển đường lối, chính sách đến dân và phản ánh tình hình, nguyện vọng của dân với Đảng, Nhà nước. Vì vậy, cán bộ là khâu nối quyết định việc đường lối đúng có được thực hiện đúng trong đời sống hay không.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 81."
   },
   {
-    "question": "Theo tư tưởng Hồ Chí Minh, nhân tố quyết định hàng đầu để đưa cách mạng Việt Nam đến thắng lợi là: (NHUNG HOÀNG)",
+    "question": "Theo tư tưởng Hồ Chí Minh, nhân tố quyết định hàng đầu để đưa cách mạng Việt Nam đến thắng lợi là:",
     "options": {
       "A": "Đoàn kết dân tộc",
       "B": "Đoàn kết giai cấp",
@@ -5930,7 +5930,7 @@ const allQuestionsVerified = [
     "explanation": "Pháp luật phải xử lý nghiêm người vi phạm, không phân biệt địa vị, đồng thời coi trọng giáo dục và cảm hóa. Hai yêu cầu cùng nhằm bảo vệ kỷ cương và giúp con người sửa lỗi, nên phương án tổng hợp phù hợp.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 89-90,93.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Hồ Chí Minh nói: \"Đạo đức cũ như người đầu ngược xuống đất chân chổng lên trời. Đạo đức mới như người hai chân đứng vững được dưới đất, đầu: (NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh nói: \"Đạo đức cũ như người đầu ngược xuống đất chân chổng lên trời. Đạo đức mới như người hai chân đứng vững được dưới đất, đầu:",
     "options": {
       "A": "ngửng lên trời\".",
       "B": "ngửa lên trời\".",
@@ -6117,7 +6117,7 @@ const allQuestionsVerified = [
     "explanation": "Mặt trận dân tộc thống nhất là hình thức tổ chức tập hợp các lực lượng yêu nước thành khối đoàn kết. Nó biến tinh thần đoàn kết thành cơ cấu phối hợp và hành động có mục tiêu chung.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 102-104."
   },
   {
-    "question": "Hồ Chí Minh khái quát dân chủ có nghĩa là gì? (NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh khái quát dân chủ có nghĩa là gì?",
     "options": {
       "A": "Dân là chủ và dân làm chủ",
       "B": "Dân là người chủ",
@@ -6227,7 +6227,7 @@ const allQuestionsVerified = [
     "explanation": "Chủ nghĩa Mác - Lênin là nền tảng tư tưởng và kim chỉ nam giúp Đảng thống nhất mục tiêu, phương pháp. Việc học tập phải gắn vận dụng sáng tạo với thực tế Việt Nam, tránh chỉ học thuộc hoặc áp dụng máy móc.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 75."
   },
   {
-    "question": "Theo Hồ Chí Minh, Đảng cầm quyền là Đảng tiếp tục lãnh đạo sự nghiệp cách mạng trong điều kiện Đảng lãnh đạo quần chúng nhân dân giành được quyền lực nhà nước và:(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, Đảng cầm quyền là Đảng tiếp tục lãnh đạo sự nghiệp cách mạng trong điều kiện Đảng lãnh đạo quần chúng nhân dân giành được quyền lực nhà nước và:",
     "options": {
       "A": "Đảng gương mẫu lãnh đạo bộ máy nhà nước đó.",
       "B": "Đảng trực tiếp lãnh đạo bộ máy nhà nước đó.",
@@ -6348,7 +6348,7 @@ const allQuestionsVerified = [
     "explanation": "Học và tuyên truyền lý luận cần phù hợp trình độ, hoàn cảnh, nhu cầu của từng đối tượng để người học hiểu và vận dụng được. Giáo trình nhấn mạnh liên hệ lý luận với thực tiễn, chống học thuộc hình thức và áp dụng máy móc.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 75.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Theo Hồ Chí Minh, Trong xây dựng đường lối chính trị, phải học tập kinh nghiệm của các đảng cộng sản anh em, nhưng phải tính đến những điều kiện cụ thể của đất nước và của: (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, Trong xây dựng đường lối chính trị, phải học tập kinh nghiệm của các đảng cộng sản anh em, nhưng phải tính đến những điều kiện cụ thể của đất nước và của:",
     "options": {
       "A": "Loài người.",
       "B": "Thời đại.",
@@ -6414,7 +6414,7 @@ const allQuestionsVerified = [
     "explanation": "Hình ảnh thần linh pháp quyền nhấn mạnh vai trò tối cao của pháp luật trong tổ chức, quản lý xã hội. Mọi quyền lực và hành động công vụ phải có nền tảng pháp lý, không phụ thuộc sự tùy tiện của người có chức vụ.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 87-88."
   },
   {
-    "question": "Theo Hồ Chí Minh, tính dân tộc của nền văn hoá là đặc tính dân tộc, cốt cách dân tộc, chiều sâu bản chất rất đặc trưng của văn hoá dân tộc, không nhầm lẫn với: (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, tính dân tộc của nền văn hoá là đặc tính dân tộc, cốt cách dân tộc, chiều sâu bản chất rất đặc trưng của văn hoá dân tộc, không nhầm lẫn với:",
     "options": {
       "A": "Văn hoá của các dân tộc khác.",
       "B": "Tinh hoa của các dân tộc khác.",
@@ -6425,7 +6425,7 @@ const allQuestionsVerified = [
     "explanation": "Tính dân tộc biểu hiện ở bản sắc, giá trị, ngôn ngữ và cách thể hiện riêng của văn hóa Việt Nam. Giữ bản sắc không có nghĩa khép kín; cần tiếp thu tinh hoa bên ngoài mà không sao chép, làm mất cốt cách dân tộc.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 119-121,123.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Theo Hồ Chí Minh phải chú trọng \"đạo làm gương\". Đối với Người \"một tấm gương sống còn có giá trị hơn: (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh phải chú trọng \"đạo làm gương\". Đối với Người \"một tấm gương sống còn có giá trị hơn:",
     "options": {
       "A": "một trăm bài diễn văn tuyên truyền\",",
       "B": "một trăm hòm vàng\",",
@@ -6436,7 +6436,7 @@ const allQuestionsVerified = [
     "explanation": "Gương sống chứng minh giá trị đạo đức bằng hành động có thể quan sát và làm theo. Vì vậy, sức giáo dục của người gương mẫu rất lớn, nhất là đối với cán bộ, đảng viên có trách nhiệm dẫn dắt nhân dân.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 133,140.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Chiến lược trồng người được Hồ Chí Minh xác định ở vị trí nào trong sự phát triển kinh tế xã hội? (NHUNG HOÀNG)",
+    "question": "Chiến lược trồng người được Hồ Chí Minh xác định ở vị trí nào trong sự phát triển kinh tế xã hội?",
     "options": {
       "A": "Cơ bản",
       "B": "Trọng tâm",
@@ -6447,7 +6447,7 @@ const allQuestionsVerified = [
     "explanation": "Trồng người có vị trí cơ bản, lâu dài vì con người là mục tiêu và động lực phát triển. Xây dựng kinh tế, xã hội cần đồng thời bồi dưỡng phẩm chất, tri thức và năng lực của các thế hệ.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 138-139."
   },
   {
-    "question": "Theo Hồ Chí Minh, tính đại chúng của nền văn hoá là phải phục vụ nhân dân và do: (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, tính đại chúng của nền văn hoá là phải phục vụ nhân dân và do:",
     "options": {
       "A": "Nhà nước xây dựng nên.",
       "B": "Nhân dân xây dựng thêm.",
@@ -6546,7 +6546,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM CHỨNG: Nội dung đáp án nhân dân lao động phù hợp trang 53–57; toàn câu được đặt trong dấu trích cần nguồn nguyên văn.\nNhân dân lao động là chủ thể của xã hội mới và là đối tượng trước hết được hưởng thành quả phát triển. Tuy nhiên, giáo trình trình bày các nội dung của câu theo nhiều đoạn, chưa xác nhận toàn bộ câu ghép là một trích dẫn nguyên văn; chỗ điền D giữ theo bộ câu hỏi.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 53,56-57."
   },
   {
-    "question": "Điền vào chỗ trống theo tư tưởng Hồ Chí Minh: \"Kẻ thù muốn đè bẹp ta về kinh tế thay bằng (...........), vì vậy ta phải phát triển kinh tế\". (NHUNG HOÀNG)",
+    "question": "Điền vào chỗ trống theo tư tưởng Hồ Chí Minh: \"Kẻ thù muốn đè bẹp ta về kinh tế thay bằng (...........), vì vậy ta phải phát triển kinh tế\".",
     "options": {
       "A": "Chính trị",
       "B": "Quân sự",
@@ -6557,7 +6557,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM CHỨNG: Cần nguyên văn câu nói để xác nhận từ quân sự.\nÝ nghĩa của câu là độc lập cần nền kinh tế đủ mạnh để tránh bị lệ thuộc, không chỉ khả năng bảo vệ bằng quân sự. Giáo trình hỗ trợ mối quan hệ kinh tế, chủ nghĩa xã hội và độc lập, nhưng không dẫn nguyên văn câu này; từ điền B chưa được xác nhận trực tiếp trong giáo trình.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 63,65-66."
   },
   {
-    "question": "Điền vào chỗ trống theo tư tưởng Hồ Chí Minh: \"Chỉ có chủ nghĩa cộng sản mới cứu (........), đem lại cho mọi người không phân biệt chủng tộc và nguồn gốc sự tự do, bình đẳng, bác ái, đoàn kết, ấm no trên quả đất, việc làm cho mọi người và vì mọi người, niềm vui, hòa bình, hạnh phúc...\"(NHUNG HOÀNG)",
+    "question": "Điền vào chỗ trống theo tư tưởng Hồ Chí Minh: \"Chỉ có chủ nghĩa cộng sản mới cứu (........), đem lại cho mọi người không phân biệt chủng tộc và nguồn gốc sự tự do, bình đẳng, bác ái, đoàn kết, ấm no trên quả đất, việc làm cho mọi người và vì mọi người, niềm vui, hòa bình, hạnh phúc...\"",
     "options": {
       "A": "Con người",
       "B": "Loài người",
@@ -6678,7 +6678,7 @@ const allQuestionsVerified = [
     "explanation": "Quốc hội là cơ quan đại diện do nhân dân bầu qua tổng tuyển cử. Giáo trình trình bày sự hình thành cơ quan này và nền tảng hợp hiến, hợp pháp của Nhà nước; quyền bầu đại diện là một cách nhân dân thực hiện quyền làm chủ.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 84,87."
   },
   {
-    "question": "Trong luận điểm về cách mạng giải phóng dân tộc, chỉ ra luận điểm sai về con đường, biện pháp , lực lượng và phương pháp cách mạng của Hồ Chí Minh ?(NHUNG HOÀNG)",
+    "question": "Trong luận điểm về cách mạng giải phóng dân tộc, chỉ ra luận điểm sai về con đường, biện pháp , lực lượng và phương pháp cách mạng của Hồ Chí Minh ?",
     "options": {
       "A": "Cách mạng giải phóng dân tộc muốn thắng lợi phải đi theo con đường cách mạng vô sản",
       "B": "Cách mạng giải phóng dân tộc, trong điều kiện của Việt Nam, muốn thắng lợi phải do Đảng Cộng sản lãnh đạo",
@@ -6689,7 +6689,7 @@ const allQuestionsVerified = [
     "explanation": "ĐÁP ÁN CHUẨN HƠN: B là luận điểm đúng; chưa đủ căn cứ chốt một phương án sai duy nhất trong đề hiện tại.\nGiáo trình khẳng định cách mạng giải phóng dân tộc muốn thắng lợi phải do Đảng Cộng sản lãnh đạo, nên không thể dùng B làm đáp án cho câu hỏi chọn sai. C cần làm rõ ngữ cảnh: phần cách mạng giải phóng dân tộc nhấn mạnh công nông là gốc; phần đại đoàn kết trình bày nền tảng công nhân, nông dân, trí thức. Không nên tự động đổi sang C khi chưa giải quyết sự khác nhau về cách hỏi.\nĐáp án trong trường answer vẫn giữ nguyên source Quizlet: B.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 48–50, 100–103."
   },
   {
-    "question": "Khái niệm \"Đảng cầm quyền\" được Hồ Chí Minh sử dụng trong tác phẩm nào?(NHUNG HOÀNG)",
+    "question": "Khái niệm \"Đảng cầm quyền\" được Hồ Chí Minh sử dụng trong tác phẩm nào?",
     "options": {
       "A": "Chánh cương vắn tắt của Đảng",
       "B": "Tuyên ngôn Độc lập",
@@ -6711,7 +6711,7 @@ const allQuestionsVerified = [
     "explanation": "Đoàn kết là truyền thống tốt đẹp hình thành trong lịch sử dựng nước, giữ nước của dân tộc. Hồ Chí Minh kế thừa và phát triển truyền thống ấy thành chiến lược tập hợp sức mạnh nhân dân cho cách mạng.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 22,77,98.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Hoàn thành luận điểm sau: Hồ Chí Minh luôn đứng trên lập trưởng của... để giải quyết vẫn đề dân tộc.(NHUNG HOÀNG)",
+    "question": "Hoàn thành luận điểm sau: Hồ Chí Minh luôn đứng trên lập trưởng của... để giải quyết vẫn đề dân tộc.",
     "options": {
       "A": "Đảng cộng sản",
       "B": "Giai cấp",
@@ -6722,7 +6722,7 @@ const allQuestionsVerified = [
     "explanation": "ĐÁP ÁN CHUẨN HƠN: Lập trường giai cấp công nhân; B phải được diễn đạt đầy đủ.\nB chỉ ghi giai cấp nên chưa xác định giai cấp nào. Việc giải quyết vấn đề dân tộc trong tư tưởng Hồ Chí Minh gắn với lập trường giai cấp công nhân, cách mạng vô sản và chủ nghĩa Mác–Lênin, không phải một lập trường giai cấp bất kỳ.\nĐáp án trong trường answer vẫn giữ nguyên source Quizlet: B.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 46–47, 72."
   },
   {
-    "question": "Luật cải cách ruộng đất quy định nội dung nào? (NHUNG HOÀNG)",
+    "question": "Luật cải cách ruộng đất quy định nội dung nào?",
     "options": {
       "A": "Nghiêm cấm việc tiến hành bắt giữ và giết hại nhân dân, nghiêm cấm đánh đập, tra tấn hoặc dùng mọi thứ nhục hình khác",
       "B": "Nghiêm cấm việc tiến hành bắt giữ và giết hại trái phép, nghiêm cấm đánh đập, tra tẫn hoặc dùng mọi thứ nhục hình khác",
@@ -6733,7 +6733,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM CHỨNG VĂN BẢN GỐC: B phù hợp nguyên tắc cấm bắt giữ, giết hại trái phép, đánh đập, tra tấn và nhục hình; chưa đối chiếu được nguyên văn Luật cải cách ruộng đất để xác nhận riêng sự quy thuộc điều khoản. Không được diễn giải B thành cấm mọi việc bắt giữ theo đúng pháp luật.\nĐối chiếu nội dung pháp luật nhân nghĩa: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 89–90."
   },
   {
-    "question": "Trong nghiên cứu tư tưởng Hồ Chí Minh, cần quán triệt quan điểm nào dưới đây?(NHUNG HOÀNG)",
+    "question": "Trong nghiên cứu tư tưởng Hồ Chí Minh, cần quán triệt quan điểm nào dưới đây?",
     "options": {
       "A": "Quan điểm bộ phận",
       "B": "Quan điểm chinh thể",
@@ -6755,7 +6755,7 @@ const allQuestionsVerified = [
     "explanation": "Đảng phải lãnh đạo đúng, trong sạch và vững mạnh; Nhà nước phải quản lý hiệu quả, phát huy dân chủ và quyền làm chủ của nhân dân. Hai yêu cầu phối hợp để tổ chức, huy động nguồn lực và bảo đảm đường lối xây dựng chủ nghĩa xã hội được thực hiện.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 67-69,94-96."
   },
   {
-    "question": "Theo Hồ Chí Minh, đầu là lực lương lãnh đạo Mặt trân dân tộc thống nhất?(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, đầu là lực lương lãnh đạo Mặt trân dân tộc thống nhất?",
     "options": {
       "A": "Nhà nước",
       "B": "Đảng Cộng sản",
@@ -6832,7 +6832,7 @@ const allQuestionsVerified = [
     "explanation": "A phù hợp với hình ảnh trên huy hiệu Đoàn: một cánh tay cầm cờ đỏ sao vàng tiến lên, biểu đạt vai trò xung kích của thanh niên. Các phương án cầm súng hoặc khẩu hiệu không đúng hình ảnh huy hiệu.\nNguồn bổ sung: Trường THCS Phù Đổng, Ý nghĩa huy hiệu Đoàn, cờ Đoàn: https://thcsphudong.hanoi.edu.vn/doan/y-nghia-huy-hieu-doan-co-doan/ct/4837/16926"
   },
   {
-    "question": "Trong xã hội hiện nay, vận dụng tư tưởng HCM về đạo đức cán bộ có còn phù hợp không? (NHUNG HOÀNG)",
+    "question": "Trong xã hội hiện nay, vận dụng tư tưởng HCM về đạo đức cán bộ có còn phù hợp không?",
     "options": {
       "A": "Có. Vì tư tưởng của Người vẫn mang tính thời sự",
       "B": "Không. Vì tư tưởng của Người đã không còn phù hợp",
@@ -6843,7 +6843,7 @@ const allQuestionsVerified = [
     "explanation": "Các yêu cầu về trung thực, trách nhiệm, cần kiệm, liêm chính và phục vụ dân vẫn có ý nghĩa với cán bộ hiện nay. Việc vận dụng cần phù hợp hoàn cảnh cụ thể và thể hiện bằng hành vi, kết quả công việc, không chỉ bằng học thuộc khẩu hiệu.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 145-148,79-81."
   },
   {
-    "question": "Theo Hồ Chí Minh, nhiệm vụ lịch sử của thời kỳ quá độ ở nước ta là phải:(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, nhiệm vụ lịch sử của thời kỳ quá độ ở nước ta là phải:",
     "options": {
       "A": "Xóa bỏ những tàn tích của chế độ xã hội cũ, xây dựng các giá trị mới phù hợp trên tất cà các lĩnh vực đời sống xã hội",
       "B": "Củng cố và phát triển các giá trị của xã hội cũ vẫn còn phù hợp để xây dựng chủ nghĩa xã hội",
@@ -6887,7 +6887,7 @@ const allQuestionsVerified = [
     "explanation": "Lời tổng kết nhấn mạnh quy mô, mức độ đoàn kết gắn với khả năng thành công của cách mạng. Ý chính là vai trò chiến lược của đại đoàn kết toàn dân tộc, chứ không chỉ mô tả hình thức một tổ chức.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 98-99."
   },
   {
-    "question": "Theo Hồ Chí Minh, đoàn kết phải căn cứ vào điều gì? (NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, đoàn kết phải căn cứ vào điều gì?",
     "options": {
       "A": "Tự do",
       "B": "Phê bình",
@@ -6953,7 +6953,7 @@ const allQuestionsVerified = [
     "explanation": "Giáo trình ghi ngày 19-5-1941, Hồ Chí Minh sáng lập Mặt trận Việt Minh, tức Việt Nam Độc lập Đồng minh. Tổ chức này tập hợp lực lượng yêu nước nhằm thực hiện nhiệm vụ giải phóng dân tộc.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 34."
   },
   {
-    "question": "Theo Hồ Chí Minh, đường lối của nhà yêu nước nào còn \"nặng cốt cách phong kiến\"?(NHUNG HOÀNG)",
+    "question": "Theo Hồ Chí Minh, đường lối của nhà yêu nước nào còn \"nặng cốt cách phong kiến\"?",
     "options": {
       "A": "Phan Châu Trinh",
       "B": "Phan Bội Châu",
@@ -6964,7 +6964,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM CHỨNG: Cần nguồn nguyên văn cho nhận xét nặng cốt cách phong kiến gán cho Hoàng Hoa Thám.\nGiáo trình nêu hạn chế và sự thất bại của các phong trào yêu nước trước khi có con đường mới. Tuy nhiên, nhận xét nguyên văn “nặng cốt cách phong kiến” đối với Hoàng Hoa Thám chưa được trích trực tiếp; đáp án C giữ theo bộ câu hỏi, cần văn bản gốc để xác nhận cách đánh giá.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 19-20,28."
   },
   {
-    "question": "Hồ Chí Minh cho rằng công tác cán bộ cần chú ý.(NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh cho rằng công tác cán bộ cần chú ý.",
     "options": {
       "A": "Hiểu và đánh giá đúng đảng viên",
       "B": "Hiểu và đánh giá đúng cán bộ",
@@ -6975,7 +6975,7 @@ const allQuestionsVerified = [
     "explanation": "Đánh giá đúng cán bộ là cơ sở để đào tạo, bố trí, sử dụng và giúp họ phát huy sở trường. Đánh giá chủ quan, chỉ nhìn một mặt hoặc vì quan hệ riêng có thể dẫn đến dùng người sai và làm hỏng công việc.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 81.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Nội dung cốt lõi của tư tưởng Hồ Chí Minh về mối quan hệ giữa độc lập dân tộc và chủ nghĩa xã hội là gì?(NHUNG HOÀNG)",
+    "question": "Nội dung cốt lõi của tư tưởng Hồ Chí Minh về mối quan hệ giữa độc lập dân tộc và chủ nghĩa xã hội là gì?",
     "options": {
       "A": "Độc lập dân tộc là cơ sở, tiền đề để tiến lên chủ nghĩa xã hội, chủ nghĩa xã hội là điều kiện để bảo đảm nền độc lập dân tộc vững chắc",
       "B": "Hồ Chí Minh đã chỉ ra độc lập dân tộc là bao gồm cả nội dung dân tộc và dân chủ",
@@ -6986,7 +6986,7 @@ const allQuestionsVerified = [
     "explanation": "Độc lập tạo điều kiện để dân tộc tự lựa chọn, thực hiện con đường xây dựng xã hội mới. Chủ nghĩa xã hội đem lại cơ sở kinh tế, chính trị và đời sống nhân dân để củng cố độc lập bền vững; hai mục tiêu gắn bó, không tách rời.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 65-67."
   },
   {
-    "question": "Điều kiện thực hiện khối đại đoàn kết tư tưởng Hồ Chí Minh về khối đại đoàn kết dân tộc? (NHUNG HOÀNG)",
+    "question": "Điều kiện thực hiện khối đại đoàn kết tư tưởng Hồ Chí Minh về khối đại đoàn kết dân tộc?",
     "options": {
       "A": "Truyền thống yêu thiên nhiên",
       "B": "Truyền thống yêu con người",
@@ -7019,7 +7019,7 @@ const allQuestionsVerified = [
     "explanation": "CẦN KIỂM CHỨNG: Sách hỗ trợ tình yêu con người rộng khắp của Hồ Chí Minh; chưa đủ để kết luận riêng sự so sánh với Khổng Tử.\nTình yêu thương của Hồ Chí Minh hướng tới người bị áp bức, lao động và nhân loại tiến bộ, vượt giới hạn quốc gia, chủng tộc. Giáo trình xác nhận phạm vi nhân ái rộng ấy, nhưng chưa đưa so sánh trực tiếp đầy đủ với Khổng Tử; không nên từ đây kết luận đơn giản về toàn bộ học thuyết của Khổng Tử.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 130-132."
   },
   {
-    "question": "Nhận định nào sau đây đúng với khải niệm con người trong tư tưởng Hồ Chí Minh?(NHUNG HOÀNG)",
+    "question": "Nhận định nào sau đây đúng với khải niệm con người trong tư tưởng Hồ Chí Minh?",
     "options": {
       "A": "Dùng để chỉ con người chung chung",
       "B": "Dùng đẽ chỉ một cộng đông người",
@@ -7030,7 +7030,7 @@ const allQuestionsVerified = [
     "explanation": "Con người được xem trong hoàn cảnh lịch sử, xã hội và những quan hệ cụ thể, không phải khái niệm trừu tượng bất biến. Cách nhìn này giúp xác định đúng nhu cầu, điều kiện và phương pháp xây dựng, phát triển con người.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 136-137."
   },
   {
-    "question": "Hồ Chí Minh cho rằng thầy giáo, cô giáo trong chế độ ta cần phải góp phần vào:(NHUNG HOÀNG)",
+    "question": "Hồ Chí Minh cho rằng thầy giáo, cô giáo trong chế độ ta cần phải góp phần vào:",
     "options": {
       "A": "Công cuộc xây dựng CNXH",
       "B": "Công cuộc kháng chiến chống Mỹ cứu nước",
@@ -7041,7 +7041,7 @@ const allQuestionsVerified = [
     "explanation": "Giáo dục bồi dưỡng phẩm chất và năng lực của con người, tạo lực lượng cho xây dựng chủ nghĩa xã hội. Vì vậy, nhà giáo có trách nhiệm vừa truyền tri thức, vừa nêu gương, giáo dục đạo đức và ý thức làm chủ.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 139-140.\nTài liệu không có lựa chọn D."
   },
   {
-    "question": "Đâu là quan điểm của Hồ Chí Minh về văn hóa? (NHUNG HOÀNG)",
+    "question": "Đâu là quan điểm của Hồ Chí Minh về văn hóa?",
     "options": {
       "A": "Theo Hồ Chí Minh, văn hóa không thụ động, ngồi chờ cho kinh tế phát triển. Phát triển văn hóa tạo điều kiện thúc đẩy phát triển kinh tế",
       "B": "Theo Hồ Chí Minh, văn hóa không thụ động, ngồi chờ cho kinh tế phát triển. Phát triển văn hóa tạo điều kiện thúc đẩy phát triển xã hội",
@@ -7052,7 +7052,7 @@ const allQuestionsVerified = [
     "explanation": "Kinh tế tạo điều kiện vật chất cho văn hóa, nhưng văn hóa cũng tác động trở lại kinh tế bằng tri thức, kỹ năng, đạo đức và động lực hành động. Do đó, phải chủ động phát triển văn hóa cùng kinh tế, không chỉ chờ kinh tế phát triển xong.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 119,121-122."
   },
   {
-    "question": "Đề cập đến vấn đề dân tộc thuộc địa, khác với Mác và Lênin, Hồ Chí Minh bàn nhiều về cuộc đấu tranh nào:(NHUNG HOÀNG)",
+    "question": "Đề cập đến vấn đề dân tộc thuộc địa, khác với Mác và Lênin, Hồ Chí Minh bàn nhiều về cuộc đấu tranh nào:",
     "options": {
       "A": "Chống chủ nghĩa phát xít, giải phóng giai cấp",
       "B": "Chống địa chủ phong kiến, giải phóng cho nông dân",
@@ -7118,7 +7118,7 @@ const allQuestionsVerified = [
     "explanation": "Giáo trình nêu văn hóa phải sửa đổi tham nhũng, lười biếng, phù hoa và xa xỉ. Vì cả A, B, C đều là những thói xấu được liệt kê, câu này giữ đáp án nhiều lựa chọn ABC; ý nghĩa là văn hóa phải cải tạo hành vi và đời sống xã hội.\nĐối chiếu: Giáo trình Tư tưởng Hồ Chí Minh 2021, trang PDF 118."
   },
   {
-    "question": "Trong tư tưởng Hồ Chí Minh, quan điểm nào về mối quan hệ giữa Đảng Cộng sản và nhân dẫn được thế hiện rõ nhất?(NHUNG HOÀNG)",
+    "question": "Trong tư tưởng Hồ Chí Minh, quan điểm nào về mối quan hệ giữa Đảng Cộng sản và nhân dẫn được thế hiện rõ nhất?",
     "options": {
       "A": "Nhân dân là nguồn gốc và động lực của Đảng",
       "B": "Đảng phải lãnh đạo nhân dân trong mọi lĩnh vực",
